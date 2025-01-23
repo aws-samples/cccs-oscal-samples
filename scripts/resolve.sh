@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the list of profiles
-profiles=("mods" "medium" "pbhva")
+profiles=("mods" "medium" "pbhva-overlay" "medium+pbhva")
 
 # Loop through each profile
 for profile in "${profiles[@]}"; do
