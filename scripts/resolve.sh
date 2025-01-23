@@ -16,6 +16,10 @@ for profile in "${profiles[@]}"; do
     # Validate the resolved catalog
     oscal-cli validate cccs-$profile-resolved.json
 
+    # Trim file paths
+    sed -i .bak 's|file:.*cccs-oscal-samples/||g' cccs-$profile-resolved.json
+    rm cccs-$profile-resolved.json.bak
+    
     # Convert to CSV
     python ../scripts/catalog-to-csv.py cccs-$profile-resolved.json cccs-$profile-resolved.csv
     echo "CSV file generated: cccs-$profile-resolved.csv"
