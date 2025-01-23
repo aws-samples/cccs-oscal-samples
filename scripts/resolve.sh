@@ -7,6 +7,9 @@ profiles=("mods" "medium" "pbhva")
 for profile in "${profiles[@]}"; do
     echo "Processing $profile profile..."
 
+    # Change working directory to the profile
+    cd "cccs-$profile-profile"
+
     # Resolve the profile to a catalog
     oscal-cli profile resolve --to=json --overwrite -q cccs-$profile-profile.json cccs-$profile-resolved.json
 
@@ -14,8 +17,11 @@ for profile in "${profiles[@]}"; do
     oscal-cli validate cccs-$profile-resolved.json
 
     # Convert to CSV
-    python scripts/catalog-to-csv.py cccs-$profile-resolved.json cccs-$profile-resolved.csv
+    python ../scripts/catalog-to-csv.py cccs-$profile-resolved.json cccs-$profile-resolved.csv
     echo "CSV file generated: cccs-$profile-resolved.csv"
+
+    # Change back to the original directory
+    cd ..
 
     echo "Finished processing $profile profile."
     echo

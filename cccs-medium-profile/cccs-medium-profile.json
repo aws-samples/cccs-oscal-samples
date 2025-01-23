@@ -1,0 +1,1402 @@
+{
+  "profile": {
+    "uuid": "1b242c56-454a-4d56-a70f-b74ca5f55b61",
+    "metadata": {
+      "title": "CCCS Medium Profile",
+      "last-modified": "2024-09-12T23:16:00+00:00",
+      "version": "1.0.0",
+      "oscal-version": "1.1.2"
+    },
+    "imports": [
+      {
+        "href": "../cccs-mods-profile/cccs-mods-profile.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "ac-1",
+              "ac-2",
+              "ac-2.1",
+              "ac-2.2",
+              "ac-2.3",
+              "ac-2.4",
+              "ac-2.5",
+              "ac-2.7",
+              "ac-2.9",
+              "ac-3",
+              "ac-4",
+              "ac-4.21",
+              "ac-5",
+              "ac-6",
+              "ac-6.1",
+              "ac-6.2",
+              "ac-6.5",
+              "ac-6.9",
+              "ac-6.10",
+              "ac-7",
+              "ac-8",
+              "ac-10",
+              "ac-11",
+              "ac-11.1",
+              "ac-12",
+              "ac-14",
+              "ac-17",
+              "ac-17.1",
+              "ac-17.2",
+              "ac-17.3",
+              "ac-17.4",
+              "ac-18",
+              "ac-18.1",
+              "ac-18.3",
+              "ac-19",
+              "ac-20",
+              "ac-20.1",
+              "ac-20.2",
+              "ac-21",
+              "ac-22",
+              "at-1",
+              "at-2",
+              "at-2.2",
+              "at-3",
+              "at-4",
+              "au-1",
+              "au-2",
+              "au-3",
+              "au-3.1",
+              "au-5",
+              "au-6",
+              "au-6.1",
+              "au-6.3",
+              "au-7",
+              "au-7.1",
+              "au-8",
+              "au-9",
+              "au-9.2",
+              "au-9.4",
+              "au-11",
+              "au-12",
+              "ca-1",
+              "ca-2",
+              "ca-2.1",
+              "ca-2.3",
+              "ca-3",
+              "ca-5",
+              "ca-6",
+              "ca-7",
+              "ca-7.1",
+              "ca-7.4",
+              "ca-8",
+              "ca-8.1",
+              "ca-9",
+              "cm-1",
+              "cm-2",
+              "cm-2.2",
+              "cm-2.3",
+              "cm-2.7",
+              "cm-3",
+              "cm-3.2",
+              "cm-3.4",
+              "cm-4",
+              "cm-4.2",
+              "cm-5",
+              "cm-5.1",
+              "cm-5.5",
+              "cm-6",
+              "cm-6.1",
+              "cm-6.2",
+              "cm-7",
+              "cm-7.1",
+              "cm-7.5",
+              "cm-8",
+              "cm-8.1",
+              "cm-8.2",
+              "cm-8.3",
+              "cm-9",
+              "cm-10",
+              "cm-11",
+              "cm-12",
+              "cm-12.1",
+              "cp-1",
+              "cp-2",
+              "cp-2.1",
+              "cp-2.3",
+              "cp-2.8",
+              "cp-3",
+              "cp-4",
+              "cp-4.1",
+              "cp-6",
+              "cp-6.1",
+              "cp-6.2",
+              "cp-6.3",
+              "cp-7",
+              "cp-7.1",
+              "cp-7.2",
+              "cp-7.3",
+              "cp-8",
+              "cp-8.1",
+              "cp-8.2",
+              "cp-8.3",
+              "cp-9",
+              "cp-9.1",
+              "cp-9.3",
+              "cp-9.5",
+              "cp-9.7",
+              "cp-9.8",
+              "cp-10",
+              "cp-10.2",
+              "ia-1",
+              "ia-2",
+              "ia-2.1",
+              "ia-2.2",
+              "ia-2.5",
+              "ia-2.6",
+              "ia-2.8",
+              "ia-2.12",
+              "ia-3",
+              "ia-4",
+              "ia-4.4",
+              "ia-5",
+              "ia-5.1",
+              "ia-5.2",
+              "ia-5.6",
+              "ia-5.7",
+              "ia-5.8",
+              "ia-6",
+              "ia-7",
+              "ia-8",
+              "ia-8.1",
+              "ia-8.2",
+              "ia-12.2",
+              "ir-1",
+              "ir-2",
+              "ir-3",
+              "ir-3.2",
+              "ir-4",
+              "ir-4.1",
+              "ir-4.3",
+              "ir-5",
+              "ir-6",
+              "ir-6.1",
+              "ir-7",
+              "ir-7.1",
+              "ir-7.2",
+              "ir-8",
+              "ir-9",
+              "ir-9.2",
+              "ir-9.3",
+              "ir-9.4",
+              "ma-1",
+              "ma-2",
+              "ma-3",
+              "ma-3.1",
+              "ma-3.2",
+              "ma-3.3",
+              "ma-4",
+              "ma-4.3",
+              "ma-4.6",
+              "ma-5",
+              "ma-5.1",
+              "ma-6",
+              "mp-1",
+              "mp-2",
+              "mp-3",
+              "mp-4",
+              "mp-5",
+              "mp-6",
+              "mp-6.1",
+              "mp-6.2",
+              "mp-6.3",
+              "mp-7",
+              "pe-1",
+              "pe-2",
+              "pe-3",
+              "pe-3.1",
+              "pe-5",
+              "pe-6",
+              "pe-6.1",
+              "pe-8",
+              "pe-9",
+              "pe-10",
+              "pe-11",
+              "pe-12",
+              "pe-13",
+              "pe-13.1",
+              "pe-13.2",
+              "pe-14",
+              "pe-14.2",
+              "pe-15",
+              "pe-16",
+              "pe-17",
+              "pl-1",
+              "pl-2",
+              "pl-4",
+              "pl-4.1",
+              "pl-8",
+              "ps-1",
+              "ps-2",
+              "ps-3",
+              "ps-3.3",
+              "ps-4",
+              "ps-5",
+              "ps-6",
+              "ps-7",
+              "ps-8",
+              "ra-1",
+              "ra-2",
+              "ra-3",
+              "ra-3.1",
+              "ra-5",
+              "ra-5.2",
+              "ra-5.3",
+              "ra-5.5",
+              "ra-5.6",
+              "ra-5.8",
+              "ra-5.11",
+              "ra-7",
+              "ra-9",
+              "sa-1",
+              "sa-2",
+              "sa-3",
+              "sa-4",
+              "sa-4.1",
+              "sa-4.2",
+              "sa-4.8",
+              "sa-4.9",
+              "sa-4.10",
+              "sa-5",
+              "sa-8",
+              "sa-9",
+              "sa-9.1",
+              "sa-9.2",
+              "sa-9.4",
+              "sa-9.5",
+              "sa-10",
+              "sa-10.1",
+              "sa-11",
+              "sa-11.1",
+              "sa-11.2",
+              "sa-11.8",
+              "sa-15",
+              "sc-1",
+              "sc-2",
+              "sc-4",
+              "sc-5",
+              "sc-7",
+              "sc-7.3",
+              "sc-7.4",
+              "sc-7.5",
+              "sc-7.7",
+              "sc-7.8",
+              "sc-7.12",
+              "sc-7.18",
+              "sc-8",
+              "sc-8.1",
+              "sc-10",
+              "sc-12",
+              "sc-12.1",
+              "sc-12.2",
+              "sc-12.3",
+              "sc-13",
+              "sc-15",
+              "sc-17",
+              "sc-18",
+              "sc-20",
+              "sc-21",
+              "sc-22",
+              "sc-23",
+              "sc-28",
+              "sc-28.1",
+              "sc-39",
+              "sc-45",
+              "sc-45.1",
+              "si-1",
+              "si-2",
+              "si-2.2",
+              "si-2.3",
+              "si-3",
+              "si-4",
+              "si-4.1",
+              "si-4.2",
+              "si-4.4",
+              "si-4.5",
+              "si-4.7",
+              "si-4.11",
+              "si-4.14",
+              "si-4.16",
+              "si-4.18",
+              "si-4.20",
+              "si-4.23",
+              "si-5",
+              "si-5.1",
+              "si-6",
+              "si-7",
+              "si-7.1",
+              "si-7.7",
+              "si-8",
+              "si-8.2",
+              "si-10",
+              "si-11",
+              "si-12",
+              "si-16",
+              "sr-1",
+              "sr-2",
+              "sr-2.1",
+              "sr-3",
+              "sr-5",
+              "sr-6",
+              "sr-8",
+              "sr-10",
+              "sr-11",
+              "sr-11.1",
+              "sr-11.2",
+              "sr-12"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    },
+    "modify": {
+      "set-parameters": [
+        {
+          "param-id": "ac-1_prm_1",
+          "values": ["personnel or roles with access control responsibilities"]
+        },
+        {
+          "param-id": "ac-01_odp.05",
+          "values": ["at least every 3 years"]
+        },
+        {
+          "param-id": "ac-01_odp.06",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "ac-01_odp.07",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "ac-01_odp.08",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "ac-02_odp.01",
+          "values": ["responsible managers"]
+        },
+        {
+          "param-id": "ac-02_odp.03",
+          "values": ["responsible managers"]
+        },
+        {
+          "param-id": "ac-02_odp.05",
+          "values": ["responsible managers"]
+        },
+        {
+          "param-id": "ac-02_odp.06",
+          "values": ["twenty-four (24) hours"]
+        },
+        {
+          "param-id": "ac-02_odp.07",
+          "values": ["eight (8) hours"]
+        },
+        {
+          "param-id": "ac-02_odp.08",
+          "values": ["eight (8) hours"]
+        },
+        {
+          "param-id": "ac-02_odp.10",
+          "values": ["quarterly for privileged access, annually for non-privileged access"]
+        },
+        {
+          "param-id": "ac-02.02_odp.01",
+          "values": ["disables"]
+        },
+        {
+          "param-id": "ac-02.02_odp.02",
+          "values": ["no more than 96 hours from last use"]
+        },
+        {
+          "param-id": "ac-02.03_odp.01",
+          "values": ["24 hours for user accounts"]
+        },
+        {
+          "param-id": "ac-02.03_odp.02",
+          "values": ["ninety (90) days"]
+        },
+        {
+          "param-id": "ac-02.05_odp",
+          "values": ["leaving at the end of their workday"]
+        },
+        {
+          "param-id": "ac-02.09_odp",
+          "values": ["organization-defined need with justification statement that explains why such accounts are necessary"]
+        },
+        {
+          "param-id": "ac-04_odp",
+          "values": ["deny-all, aproved by exception information flow policies"]
+        },
+        {
+          "param-id": "ac-4.21_prm_1",
+          "values": ["session encryption"]
+        },
+        {
+          "param-id": "ac-04.21_odp.03",
+          "values": ["separation of all sessions"]
+        },
+        {
+          "param-id": "ac-06.02_odp",
+          "values": ["all security functions"]
+        },
+        {
+          "param-id": "ac-07_odp.01",
+          "values": ["not more than three"]
+        },
+        {
+          "param-id": "ac-07_odp.02",
+          "values": ["15 minute time period"]
+        },
+        {
+          "param-id": "ac-07_odp.04",
+          "values": ["three (3) hours"]
+        },
+        {
+          "param-id": "ac-10_odp.01",
+          "values": ["each account unless justified for operational requirements"]
+        },
+        {
+          "param-id": "ac-10_odp.02",
+          "values": ["three (3) sessions for privileged access and two (2) sessions for non-privileged access"]
+        },
+        {
+          "param-id": "ac-11_odp.01",
+          "values": ["initiating a device lock after 15 minutes of inactivity; requiring the user to initiate a device lock before leaving the system unattended"]
+        },
+        {
+          "param-id": "ac-11_odp.02",
+          "values": ["fifteen (15) minutes"]
+        },
+        {
+          "param-id": "ac-12_odp",
+          "values": ["a maximum of 24 hours of inactivity or upon request by the user"]
+        },
+        {
+          "param-id": "ac-22_odp",
+          "values": ["at least quarterly"]
+        },
+        {
+          "param-id": "at-01_odp.05",
+          "values": ["at least every 3 years"]
+        },
+        {
+          "param-id": "at-1_prm_1",
+          "values": ["personnel or roles with security awareness and training responsibilities"]
+        },
+        {
+          "param-id": "at-01_odp.06",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "at-01_odp.07",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "at-01_odp.08",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "at-2_prm_1",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "at-02_odp.06",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "at-03_odp.03",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "at-03_odp.04",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "at-04_odp",
+          "values": ["at least one (1) year or 1 year after completion of a specific training program"]
+        },
+        {
+          "param-id": "au-1_prm_1",
+          "values": ["personnel or roles with audit and accountability responsibilities"]
+        },
+        {
+          "param-id": "au-01_odp.05",
+          "values": ["at least every 3 years"]
+        },
+        {
+          "param-id": "au-01_odp.07",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "au-01_odp.08",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "au-02_odp.01",
+          "values": ["successful and unsuccessful account logon events, account management events, object access, policy change, privilege functions, process tracking, and system events. For Web applications: all administrator activity, authentication checks, authorization checks, data deletions, data access, data changes, and permission changes"]
+        },
+        {
+          "param-id": "au-2_prm_2",
+          "values": ["organization-defined subset of the auditable events defined in AU-2a to be audited continually for each identified event"]
+        },
+        {
+          "param-id": "au-02_odp.04",
+          "values": ["annually and whenever there is a change in the threat environment"]
+        },
+        {
+          "param-id": "au-03.01_odp",
+          "values": ["session, connection, transaction, or activity duration; for client-server transactions, the number of bytes received and bytes sent; additional informational messages to diagnose or identify the event; characteristics that describe or identify the object or resource being acted upon; individual identities of group account users; full-text of privileged commands"]
+        },
+        {
+          "param-id": "au-05_odp.03",
+          "values": ["overwrite oldest record"]
+        },
+        {
+          "param-id": "au-06_odp.01",
+          "values": ["at least weekly"]
+        },
+        {
+          "param-id": "au-06_odp.02",
+          "values": ["indicators of compromise identified in SI-4(5)"]
+        },
+        {
+          "param-id": "au-07.01_odp",
+          "values": ["all audit fields specified in AU-2, AU-3 and AU-3(1)"]
+        },
+        {
+          "param-id": "au-08_odp",
+          "values": ["one second granularity of time measurement"]
+        },
+        {
+          "param-id": "au-09.02_odp",
+          "values": ["at least weekly"]
+        },
+        {
+          "param-id": "au-11_odp",
+          "values": ["at least 90 days; events and logs associated with a security incident for at least 5 years"]
+        },
+        {
+          "param-id": "au-12_odp.01",
+          "values": ["all information system and network components where audit capability is deployed/available"]
+        },
+        {
+          "param-id": "ca-01_odp.05",
+          "values": ["at least every 3 years"]
+        },
+        {
+          "param-id": "ca-01_odp.06",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "ca-01_odp.07",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "ca-01_odp.08",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "ca-02_odp.01",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "ca-02_odp.02",
+          "values": ["individuals or roles to include CCCS"]
+        },
+        {
+          "param-id": "ca-02.03_odp.01",
+          "values": ["external independent (For CCCS assessment: FedRAMP 3PAO, For ISO / SOC: External independent organization)"]
+        },
+        {
+          "param-id": "ca-02.03_odp.02",
+          "values": ["CSP's information system within the scope of the cloud services provided, excluding tenant components"]
+        },
+        {
+          "param-id": "ca-02.03_odp.03",
+          "values": ["all applicable requirements"]
+        },
+        {
+          "param-id": "ca-03_odp.03",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "ca-05_odp",
+          "values": ["at least monthly"]
+        },
+        {
+          "param-id": "ca-06_odp",
+          "values": ["at least every three (3) years or when a significant change occurs"]
+        },
+        {
+          "param-id": "ca-08_odp.01",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "ca-09_odp.03",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "cm-01_odp.05",
+          "values": ["at least every 3 years"]
+        },
+        {
+          "param-id": "cm-01_odp.06",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "cm-01_odp.07",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "cm-01_odp.08",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "cm-02_odp.01",
+          "values": ["At least annually and when a significant change occurs"]
+        },
+        {
+          "param-id": "cm-02_odp.02",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "cm-02.03_odp",
+          "values": ["most recent two"]
+        },
+        {
+          "param-id": "cm-03_odp.01",
+          "values": ["at least 90 days"]
+        },
+        {
+          "param-id": "cm-5.5_prm_1",
+          "values": ["at least quarterly"]
+        },
+        {
+          "param-id": "cm-06_odp.01",
+          "values": ["checklists from one or more of the following: Center for Internet Security (CIS), National Institute of Standards and Technology (NIST), Defense Information Systems Agency (DISA)"]
+        },
+        {
+          "param-id": "cm-06_odp.02",
+          "values": ["any information system component"]
+        },
+        {
+          "param-id": "cm-06.02_odp.02",
+          "values": ["configuration settings"]
+        },
+        {
+          "param-id": "cm-06.02_odp.01",
+          "values": ["alerting designated organizational personnel, restoring established configuration settings, or, in extreme cases, halting affected system processing"]
+        },
+        {
+          "param-id": "cm-07.01_odp.01",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "cm-7.1_prm_2",
+          "values": ["all functions, ports, protocols, and services within the information system deemed to be unnecessary and/or nonsecure"]
+        },
+        {
+          "param-id": "cm-07.05_odp.01",
+          "values": ["authorized software programs in baseline configuration and information system component inventory"]
+        },
+        {
+          "param-id": "cm-07.05_odp.02",
+          "values": ["at least quarterly or when there is a change"]
+        },
+        {
+          "param-id": "cm-08_odp.01",
+          "values": ["unique asset identifier, NetBIOS name, baseline configuration name, OS Name, OS Version, system owner information"]
+        },
+        {
+          "param-id": "cm-08_odp.02",
+          "values": ["at least monthly"]
+        },
+        {
+          "param-id": "cm-8.3_prm_1",
+          "values": ["automated mechanisms with a maximum five-minute delay in detection"]
+        },
+        {
+          "param-id": "cm-08.03_odp.04",
+          "values": ["continuously"]
+        },
+        {
+          "param-id": "cm-11_odp.03",
+          "values": ["continuously (via CM-7 (5))"]
+        },
+        {
+          "param-id": "cp-01_odp.05",
+          "values": ["at least every 3 years"]
+        },
+        {
+          "param-id": "cp-01_odp.06",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "cp-01_odp.07",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "cp-01_odp.08",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "cp-02_odp.05",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "cp-02.03_odp.01",
+          "values": ["all"]
+        },
+        {
+          "param-id": "cp-02.03_odp.02",
+          "values": ["24 hours"]
+        },
+        {
+          "param-id": "cp-03_odp.01",
+          "values": ["10 days for adminstrators, new hires within 60 days"]
+        },
+        {
+          "param-id": "cp-03_odp.02",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "cp-03_odp.03",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "cp-04_odp.01",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "cp-4_prm_2",
+          "values": ["functional exercises"]
+        },
+        {
+          "param-id": "cp-08_odp.01",
+          "values": ["all information system operations covered by the contingency plan (CP-2)"]
+        },
+        {
+          "param-id": "cp-08_odp.02",
+          "values": ["the recovery time objectives specified in the service agreement"]
+        },
+        {
+          "param-id": "cp-09_odp.02",
+          "values": ["daily incremental; weekly full"]
+        },
+        {
+          "param-id": "cp-09_odp.03",
+          "values": ["daily incremental; weekly full"]
+        },
+        {
+          "param-id": "cp-09_odp.04",
+          "values": ["daily incremental; weekly full"]
+        },
+        {
+          "param-id": "cp-9.1_prm_1",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "cp-09.03_odp",
+          "values": ["all operating system and critical software code"]
+        },
+        {
+          "param-id": "cp-09.08_odp",
+          "values": ["all backup files"]
+        },
+        {
+          "param-id": "ia-01_odp.05",
+          "values": ["at least every 3 years"]
+        },
+        {
+          "param-id": "ia-01_odp.06",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "ia-01_odp.07",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "ia-01_odp.08",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "ia-02.06_odp.01",
+          "values": ["local, network and remote"]
+        },
+        {
+          "param-id": "ia-02.06_odp.02",
+          "values": ["privileged accounts; non-privileged accounts"]
+        },
+        {
+          "param-id": "ia-02.06_odp.03",
+          "values": ["FIPS-validated or CSE-approved cryptography"]
+        },
+        {
+          "param-id": "ia-02.08_odp",
+          "values": ["privileged accounts; non-privileged accounts"]
+        },
+        {
+          "param-id": "ia-04_odp.01",
+          "values": ["at a minimum, the ISSO (or similar role within the organization)"]
+        },
+        {
+          "param-id": "ia-04_odp.02",
+          "values": ["at least two (2) years"]
+        },
+        {
+          "param-id": "ia-04.04_odp",
+          "values": ["employee, contractor, foreign nationals"]
+        },
+        {
+          "param-id": "ia-05_odp.01",
+          "values": ["where passwords are used implement a password policy in accordance with the GC Password Guidance (https://www.canada.ca/en/government/system/digital-government/online-security-privacy/password-guidance.html)"]
+        },
+        {
+          "param-id": "ia-05_odp.02",
+          "values": ["organizational events"]
+        },
+        {
+          "param-id": "ia-05.01_odp.02",
+          "values": ["where passwords are used implement a password policy in accordance with the GC Password Guidance (https://www.canada.ca/en/government/system/digital-government/online-security-privacy/password-guidance.html)"]
+        },
+        {
+          "param-id": "ir-01_odp.05",
+          "values": ["at least every 3 years"]
+        },
+        {
+          "param-id": "ir-01_odp.06",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "ir-01_odp.07",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "ir-01_odp.08",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "ir-02_odp.01",
+          "values": ["ten (10) days for privileged users, thirty (30) days for Incident Response roles"]
+        },
+        {
+          "param-id": "ir-02_odp.02",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "ir-02_odp.03",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "ir-02_odp.04",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "ir-03_odp.01",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "ir-03_odp.02",
+          "values": ["tests and exercises defined in NIST SP 800-61 or GC equivalent"]
+        },
+        {
+          "param-id": "ir-06_odp.01",
+          "values": ["2 hours"]
+        },
+        {
+          "param-id": "ir-08_odp.01",
+          "values": ["all personnel with a role or responsibility for implementing the incident response plan"]
+        },
+        {
+          "param-id": "ir-08_odp.02",
+          "values": ["at least annually incorporating lessons learned from past incidents"]
+        },
+        {
+          "param-id": "ir-08_odp.03",
+          "values": ["all personnel with a role or responsibility for implementing the incident response plan"]
+        },
+        {
+          "param-id": "ir-08_odp.04",
+          "values": ["all personnel with a role or responsibility for implementing the incident response plan"]
+        },
+        {
+          "param-id": "ir-8_prm_5",
+          "values": ["all personnel with a role or responsibility for implementing the incident response plan"]
+        },
+        {
+          "param-id": "ir-09_odp.01",
+          "values": ["Incident Response personnel as documented within the Incident Management Plan"]
+        },
+        {
+          "param-id": "ir-09_odp.02",
+          "values": ["Incident Response personnel as documented within the Incident Management Plan"]
+        },
+        {
+          "param-id": "ir-09_odp.03",
+          "values": ["actions documented within the Incident Management Plan"]
+        },
+        {
+          "param-id": "ir-09.02_odp",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "ma-01_odp.05",
+          "values": ["at least every 3 years"]
+        },
+        {
+          "param-id": "ma-01_odp.07",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "ma-01_odp.08",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "ma-02_odp.03",
+          "values": ["date and time of maintenance, name of the individual performing the maintenance; name of escort (if applicable), description of the maintenance performed; equipment removed or replaced (including identification numbers, if applicable)"]
+        },
+        {
+          "param-id": "ma-03_odp",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "ma-03.03_odp",
+          "values": ["the information owner"]
+        },
+        {
+          "param-id": "ma-06_odp.02",
+          "values": ["a timeframe to support advertised uptime and availability"]
+        },
+        {
+          "param-id": "mp-01_odp.05",
+          "values": ["at least every 3 years"]
+        },
+        {
+          "param-id": "mp-01_odp.06",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "mp-01_odp.07",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "mp-01_odp.08",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "mp-2_prm_1",
+          "values": ["all types of digital and/or non-digital media containing sensitive information"]
+        },
+        {
+          "param-id": "mp-03_odp.01",
+          "values": ["no removable media types"]
+        },
+        {
+          "param-id": "mp-4_prm_1",
+          "values": ["all types of digital and non-digital media with sensitive information"]
+        },
+        {
+          "param-id": "mp-05_odp.01",
+          "values": ["all media with sensitive information"]
+        },
+        {
+          "param-id": "mp-5_prm_2",
+          "values": ["prior to leaving secure/controlled environment: for digital media, encryption in compliance with Federal requirements and utilizes FIPS validated or CSE approved cryptography (see SC-13.); for non-digital media, secured in locked container"]
+        },
+        {
+          "param-id": "mp-6_prm_2",
+          "values": ["techniques and procedures in accordance with NIST SP 800-88 Section 4: Reuse and Disposal of Storage Media and Hardware"]
+        },
+        {
+          "param-id": "mp-6.2_prm_1",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "mp-07_odp.02",
+          "values": ["Prohibit"]
+        },
+        {
+          "param-id": "mp-07_odp.01",
+          "values": ["unauthorized removeable media"]
+        },
+        {
+          "param-id": "mp-07_odp.03",
+          "values": ["all components"]
+        },
+        {
+          "param-id": "mp-07_odp.04",
+          "values": ["security technical safeguards"]
+        },
+        {
+          "param-id": "pe-01_odp.05",
+          "values": ["at least every 3 years"]
+        },
+        {
+          "param-id": "pe-01_odp.06",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "pe-01_odp.07",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "pe-01_odp.08",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "pe-02_odp",
+          "values": ["at least monthly and on significant changes"]
+        },
+        {
+          "param-id": "pe-03_odp.01",
+          "values": ["all physical access points to the facility"]
+        },
+        {
+          "param-id": "pe-03_odp.02",
+          "values": ["physical access control systems/devices AND guards"]
+        },
+        {
+          "param-id": "pe-03_odp.04",
+          "values": ["all entry or exit points"]
+        },
+        {
+          "param-id": "pe-03_odp.06",
+          "values": ["in all circumstances within restricted access area where the information system resides"]
+        },
+        {
+          "param-id": "pe-03_odp.08",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "pe-3_prm_9",
+          "values": ["at least annually or earlier as required by a security relevant event"]
+        },
+        {
+          "param-id": "pe-06_odp.01",
+          "values": ["at least monthly"]
+        },
+        {
+          "param-id": "pe-08_odp.01",
+          "values": ["a minimum of one (1) year"]
+        },
+        {
+          "param-id": "pe-08_odp.02",
+          "values": ["at least monthly"]
+        },
+        {
+          "param-id": "pe-10_odp.02",
+          "values": ["near more than one egress point of the IT area and ensures it is labeled and protected by a cover to prevent accidental shut-off"]
+        },
+        {
+          "param-id": "pe-13.01_odp.01",
+          "values": ["service provider building maintenance/physical security personnel"]
+        },
+        {
+          "param-id": "pe-13.01_odp.02",
+          "values": ["service provider emergency responders with incident response responsibilities"]
+        },
+        {
+          "param-id": "pe-14_odp.04",
+          "values": ["continuously"]
+        },
+        {
+          "param-id": "pe-16_prm_1",
+          "values": ["all information system components"]
+        },
+        {
+          "param-id": "pe-17_odp.01",
+          "values": ["security controls commensurate with that of the primary site"]
+        },
+        {
+          "param-id": "pl-01_odp.05",
+          "values": ["at least every 3 years"]
+        },
+        {
+          "param-id": "pl-01_odp.06",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "pl-01_odp.07",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "pl-01_odp.08",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "pl-02_odp.01",
+          "values": ["to include chief privacy and ISSO and/or similar role or designees"]
+        },
+        {
+          "param-id": "pl-02_odp.02",
+          "values": ["to include chief privacy and ISSO and/or similar role"]
+        },
+        {
+          "param-id": "pl-02_odp.03",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "pl-04_odp.01",
+          "values": ["at least every 3 years"]
+        },
+        {
+          "param-id": "pl-04_odp.02",
+          "values": ["at least annually and when the rules are revised or changed"]
+        },
+        {
+          "param-id": "pl-08_odp",
+          "values": ["at least annually and when a significant change occurs"]
+        },
+        {
+          "param-id": "ps-01_odp.05",
+          "values": ["at least every 3 years"]
+        },
+        {
+          "param-id": "ps-01_odp.06",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "ps-01_odp.07",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "ps-01_odp.08",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "ps-02_odp",
+          "values": ["at least every three years"]
+        },
+        {
+          "param-id": "ps-3_prm_1",
+          "values": ["the TBS Standard on Security Screening and any related provisions of the PSPC Contract Security Program"]
+        },
+        {
+          "param-id": "ps-03.03_odp",
+          "values": ["the TBS Standard on Security Screening and any related provisions of the PSPC Contract Security Program"]
+        },
+        {
+          "param-id": "ps-04_odp.01",
+          "values": ["four (4) hours"]
+        },
+        {
+          "param-id": "ps-04_odp.02",
+          "values": ["the TBS Standard on Security Screening and any related provisions of the Industrial Security Program"]
+        },
+        {
+          "param-id": "ps-05_odp.01",
+          "values": ["reassignment of access to data"]
+        },
+        {
+          "param-id": "ps-05_odp.02",
+          "values": ["twenty-four (24) hours"]
+        },
+        {
+          "param-id": "ps-05_odp.03",
+          "values": ["including access control personnel responsible for the system"]
+        },
+        {
+          "param-id": "ps-05_odp.04",
+          "values": ["twenty-four (24) hours"]
+        },
+        {
+          "param-id": "ps-06_odp.01",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "ps-06_odp.02",
+          "values": ["at least annually and any time there is a change to the user's level of access"]
+        },
+        {
+          "param-id": "ps-07_odp.01",
+          "values": ["including access control personnel responsible for the system and/or facilities, as appropriate"]
+        },
+        {
+          "param-id": "ps-07_odp.02",
+          "values": ["twenty-four (24) hours"]
+        },
+        {
+          "param-id": "ps-08_odp.01",
+          "values": ["to include the ISSO and/or similar role within the organization"]
+        },
+        {
+          "param-id": "ps-08_odp.02",
+          "values": ["24 hours"]
+        },
+        {
+          "param-id": "ra-01_odp.05",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "ra-01_odp.06",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "ra-01_odp.07",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "ra-01_odp.08",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "ra-03_odp.01",
+          "values": ["security assessment report"]
+        },
+        {
+          "param-id": "ra-03_odp.03",
+          "values": ["at least every three (3) years and when a significant change occurs"]
+        },
+        {
+          "param-id": "ra-03_odp.05",
+          "values": ["at least every three (3) years"]
+        },
+        {
+          "param-id": "sa-01_odp.05",
+          "values": ["at least every 3 years"]
+        },
+        {
+          "param-id": "sa-01_odp.06",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "sa-01_odp.07",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "sa-01_odp.08",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "sc-10_odp",
+          "values": ["no longer than ten (10) minutes for privileged sessions and no longer than fifteen (15) minutes for user sessions"]
+        },
+        {
+          "param-id": "sc-45.01_odp.01",
+          "values": ["At least hourly"]
+        },
+        {
+          "param-id": "sc-45.01_odp.02",
+          "values": ["http://tf.nist.gov/tf-cgi/servers.cgi"]
+        },
+        {
+          "param-id": "si-01_odp.05",
+          "values": ["at least every 3 years"]
+        },
+        {
+          "param-id": "si-01_odp.06",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "si-01_odp.07",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "si-01_odp.08",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "si-02_odp",
+          "values": ["within thirty (30) days of release of updates"]
+        },
+        {
+          "param-id": "si-02.02_odp.02",
+          "values": ["at least monthly"]
+        },
+        {
+          "param-id": "si-03_odp.01",
+          "values": ["signature based and non-signature based"]
+        },
+        {
+          "param-id": "si-03_odp.02",
+          "values": ["at least weekly"]
+        },
+        {
+          "param-id": "si-03_odp.03",
+          "values": ["to include endpoints and network entry and exit points"]
+        },
+        {
+          "param-id": "si-03_odp.04",
+          "values": ["to include blocking and quarantining malicious code"]
+        },
+        {
+          "param-id": "si-03_odp.06",
+          "values": ["administrators or organization-defined personnel or roles"]
+        },
+        {
+          "param-id": "si-04_odp.01",
+          "values": ["consistent with the GC SEMP"]
+        },
+        {
+          "param-id": "si-4.4_prm_1",
+          "values": ["continuously"]
+        },
+        {
+          "param-id": "si-05_odp.01",
+          "values": ["to include US-CERT and Cybersecurity and Infrastructure Security Agency (CISA) Directives as well as TBS and CCCS"]
+        },
+        {
+          "param-id": "si-05_odp.02",
+          "values": ["to include system security personnel and administrators with configuration/patch-management responsibilities"]
+        },
+        {
+          "param-id": "si-06_odp.04",
+          "values": ["to include upon system startup and/or restart"]
+        },
+        {
+          "param-id": "si-06_odp.05",
+          "values": ["at least monthly"]
+        },
+        {
+          "param-id": "si-06_odp.06",
+          "values": ["to include system administrators and security personnel"]
+        },
+        {
+          "param-id": "si-7.1_prm_4",
+          "values": ["at least monthly"]
+        },
+        {
+          "param-id": "si-11_odp",
+          "values": ["to include the ISSO and/or similar role within the organization"]
+        },
+        {
+          "param-id": "sr-1_prm_1",
+          "values": ["to include chief privacy and ISSO and/or similar role or designees"]
+        },
+        {
+          "param-id": "sr-01_odp.05",
+          "values": ["at least every 3 years"]
+        },
+        {
+          "param-id": "sr-01_odp.06",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "sr-01_odp.07",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "sr-01_odp.08",
+          "values": ["significant changes"]
+        },
+        {
+          "param-id": "sr-02_odp.02",
+          "values": ["at least annually"]
+        },
+        {
+          "param-id": "sr-06_odp",
+          "values": ["at least annually"]
+        }
+      ]
+    },
+    "back-matter": {}
+  }
+}
