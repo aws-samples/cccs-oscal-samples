@@ -1,0 +1,698 @@
+{
+  "profile": {
+    "back-matter": {},
+    "uuid": "e057c6c7-c436-44b4-9d75-c503eef04f37",
+    "metadata": {
+      "version": "1.0.0",
+      "oscal-version": "1.1.2",
+      "last-modified": "2024-10-01T23:16:00Z",
+      "title": "CCCS Modifications to NIST 800-53"
+    },
+    "imports": [
+      {
+        "href": "../usnistgov/oscal-content/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json",
+        "include-all": {},
+        "exclude-controls": [
+          {
+            "with-ids": [
+              "sc-19",
+              "si-3.9"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "../cccs-control-catalog/cccs-control-catalog.json",
+        "include-all": {}
+      }
+    ],
+    "merge": {
+      "as-is": true
+    },
+    "modify": {
+      "alters": [
+        {
+          "control-id": "ac-2",
+          "removes": [
+            {
+              "by-id": "ac-2_smt.b"
+            },
+            {
+              "by-id": "ac-2_smt.h.1"
+            }
+          ],
+          "adds": [
+            {
+              "position": "after",
+              "by-id": "ac-2_smt.a",
+              "parts": [
+                {
+                  "id": "ac-2_smt.b",
+                  "props": [
+                    {
+                      "value": "b.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "Assign account managers and data custodians;",
+                  "name": "item"
+                }
+              ]
+            },
+            {
+              "position": "before",
+              "by-id": "ac-2_smt.h.2",
+              "parts": [
+                {
+                  "id": "ac-2_smt.h.1",
+                  "props": [
+                    {
+                      "value": "1.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "{{ insert: param, ac-02_odp.06 }} when accounts are no longer required or dormant;",
+                  "name": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-8",
+          "removes": [
+            {
+              "by-id": "ac-8_smt.a.1"
+            },
+            {
+              "by-id": "ac-8_smt.a.4"
+            }
+          ],
+          "adds": [
+            {
+              "position": "before",
+              "by-id": "ac-8_smt.a.2",
+              "parts": [
+                {
+                  "id": "ac-8_smt.a.1",
+                  "props": [
+                    {
+                      "value": "1.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "Users are accessing a Government of Canada system;",
+                  "name": "item"
+                }
+              ]
+            },
+            {
+              "position": "after",
+              "by-id": "ac-8_smt.a.3",
+              "parts": [
+                {
+                  "id": "ac-8_smt.a.4",
+                  "props": [
+                    {
+                      "value": "4.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "The relevant Personal Information Bank reference, if applicable;",
+                  "name": "item"
+                },
+                {
+                  "id": "ac-8_smt.a.5",
+                  "props": [
+                    {
+                      "value": "5.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "Legal authority for the collection of personal information;",
+                  "name": "item"
+                },
+                {
+                  "id": "ac-8_smt.a.6",
+                  "props": [
+                    {
+                      "value": "6.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "Any legal or administrative consequences for refusing to provide the personal information;",
+                  "name": "item"
+                },
+                {
+                  "id": "ac-8_smt.a.7",
+                  "props": [
+                    {
+                      "value": "7.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "The rights of access to, correction and protection of personal information;",
+                  "name": "item"
+                },
+                {
+                  "id": "ac-8_smt.a.8",
+                  "props": [
+                    {
+                      "value": "8.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "How the information will be used; and",
+                  "name": "item"
+                },
+                {
+                  "id": "ac-8_smt.a.9",
+                  "props": [
+                    {
+                      "value": "9.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "The right to file a complaint to the Privacy Commissioner of Canada regarding the institution's handling of the individual's personal information.",
+                  "name": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cp-2",
+          "removes": [
+            {
+              "by-id": "cp-2_smt.a.6"
+            },
+            {
+              "by-id": "cp-2_smt.a.7"
+            }
+          ],
+          "adds": [
+            {
+              "position": "after",
+              "by-id": "cp-2_smt.a.5",
+              "parts": [
+                {
+                  "id": "cp-2_smt.a.6",
+                  "props": [
+                    {
+                      "value": "6.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "Addresses the integrity of the data held within the system, including personal information;",
+                  "name": "item"
+                },
+                {
+                  "id": "cp-2_smt.a.7",
+                  "props": [
+                    {
+                      "value": "7.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "Addresses the impact, injury, or consequence of a system compromise, including with respect to personal information;",
+                  "name": "item"
+                },
+                {
+                  "id": "cp-2_smt.a.8",
+                  "props": [
+                    {
+                      "value": "8.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "Addresses the sharing of contingency information; and",
+                  "name": "item"
+                },
+                {
+                  "id": "cp-2_smt.a.9",
+                  "props": [
+                    {
+                      "value": "9.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "Is reviewed and approved by {{ insert: param, cp-2_prm_1 }};",
+                  "name": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cp-8.1",
+          "removes": [
+            {
+              "by-id": "cp-8.1_smt.b"
+            }
+          ],
+          "adds": [
+            {
+              "position": "after",
+              "by-id": "cp-8.1_smt.a",
+              "parts": [
+                {
+                  "id": "cp-8.1_smt.b",
+                  "props": [
+                    {
+                      "value": "(b)",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "Request Priority Access for Dialing (see Industry Canada, Priority Access for Dialing: telecommunications services in times of crisis) via ISED for all telecommunications services used for national security emergency preparedness if the primary and/or alternate telecommunications services are provided by a common carrier.",
+                  "name": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cp-9",
+          "adds": [
+            {
+              "position": "after",
+              "by-id": "cp-9_smt.d",
+              "parts": [
+                {
+                  "id": "cp-9_smt.aa",
+                  "props": [
+                    {
+                      "value": "aa.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "The organization determines retention periods for essential business information and archived backups.",
+                  "name": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-8.2",
+          "removes": [
+            {
+              "by-id": "ia-8.2_smt.a"
+            },
+            {
+              "by-id": "ia-8.2_gdn"
+            }
+          ],
+          "adds": [
+            {
+              "position": "before",
+              "by-id": "ia-8.2_smt.b",
+              "parts": [
+                {
+                  "id": "ia-8.2_smt.a",
+                  "props": [
+                    {
+                      "value": "(a)",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "Accept only external authenticators that are compliant with CCCS ITSP.30.031 appropriate level of assurance; and",
+                  "name": "item"
+                }
+              ]
+            },
+            {
+              "position": "after",
+              "by-id": "ia-8.2_smt",
+              "parts": [
+                {
+                  "id": "ia-8.2_gdn",
+                  "prose": "Acceptance of only NIST-compliant external authenticators applies to organizational systems that are accessible to the public (e.g., public-facing websites). External authenticators are issued by nonfederal government entities and are compliant with CCCS ITSP.30.031. Approved external authenticators meet or exceed the minimum Federal Government-wide technical, security, privacy, and organizational maturity requirements. Meeting or exceeding Federal requirements allows Federal Government relying parties to trust external authenticators in connection with an authentication transaction at a specified authenticator assurance level.",
+                  "name": "guidance"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ma-5.1",
+          "removes": [
+            {
+              "by-id": "ma-5.1_smt.a"
+            }
+          ],
+          "adds": [
+            {
+              "position": "before",
+              "by-id": "ma-5.1_smt.b",
+              "parts": [
+                {
+                  "id": "ma-5.1_smt.a",
+                  "props": [
+                    {
+                      "value": "(a)",
+                      "name": "label"
+                    }
+                  ],
+                  "parts": [
+                    {
+                      "id": "ma-5.1_smt.a.1",
+                      "props": [
+                        {
+                          "value": "(1)",
+                          "name": "label"
+                        }
+                      ],
+                      "prose": "Maintenance personnel who do not have needed access authorizations, clearances, or formal access approvals are escorted and supervised during the performance of maintenance and diagnostic activities on the system by approved organizational personnel who are fully cleared, have appropriate access authorizations, and are technically qualified; and",
+                      "name": "item"
+                    },
+                    {
+                      "id": "ma-5.1_smt.a.2",
+                      "props": [
+                        {
+                          "value": "(2)",
+                          "name": "label"
+                        }
+                      ],
+                      "prose": "Prior to initiating maintenance or diagnostic activities by personnel who do not have needed access authorizations, clearances or formal access approvals, all volatile information storage components within the system are sanitized and all nonvolatile storage media are removed or physically disconnected from the system and secured; and",
+                      "name": "item"
+                    }
+                  ],
+                  "prose": "Implement procedures for the use of maintenance personnel that lack appropriate security clearances, that include the following requirements:",
+                  "name": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pe-3",
+          "adds": [
+            {
+              "position": "after",
+              "by-id": "pe-03_odp.10",
+              "params": [
+                {
+                  "id": "pe-03_odp.11",
+                  "label": "frequency",
+                  "props": [
+                    {
+                      "value": "PE-03_ODP[11]",
+                      "name": "label",
+                      "class:": "sp800-53a"
+                    },
+                    {
+                      "value": "pe-3_prm_11",
+                      "name": "alt-identifier"
+                    }
+                  ],
+                  "guideline": "frequency at which access is removed from lost identifiers;"
+                }
+              ]
+            },
+            {
+              "position": "after",
+              "by-id": "pe-3_smt.g",
+              "parts": [
+                {
+                  "id": "pe-3_smt.aa",
+                  "props": [
+                    {
+                      "value": "aa.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "Remove the access card identifier from the access list or database {{ insert: param, pe-03_odp.11 }} when the access card is lost, misplaced, stolen, or when the individual possessing the card is transferred or terminated.",
+                  "name": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pl-2",
+          "removes": [
+            {
+              "by-id": "pl-2_smt.a.15"
+            }
+          ],
+          "adds": [
+            {
+              "position": "after",
+              "by-id": "pl-2_smt.a.14",
+              "parts": [
+                {
+                  "id": "pl-2_smt.a.15",
+                  "props": [
+                    {
+                      "value": "15.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "Are reviewed and approved by the authorizing official or designated representative prior to plan implementation;",
+                  "name": "item"
+                },
+                {
+                  "id": "pl-2_smt.a.400",
+                  "props": [
+                    {
+                      "value": "400.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "Document the business purposes for the processing of personal information; and",
+                  "name": "item"
+                },
+                {
+                  "id": "pl-2_smt.a.401",
+                  "props": [
+                    {
+                      "value": "401.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "Define retention and disposition standards for personal information stored within the system.",
+                  "name": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ps-2",
+          "removes": [
+            {
+              "by-id": "ps-2_gdn"
+            }
+          ],
+          "adds": [
+            {
+              "position": "after",
+              "by-id": "ps-2_smt",
+              "parts": [
+                {
+                  "id": "ps-2_gdn",
+                  "prose": "Security screening requirements reflect the Treasury Board of Canada Secretariat (TBS) policy and guidance. Proper position designation is the foundation of an effective and consistent suitability and personnel security program. The criteria for determining security screening requirements are established in accordance with the Position Analysis Tool and guidance issued by the Secretariat. The level of security screening and access permissions are determined by the duties to be performed, the sensitivity of information, assets, or facilities to be accessed, the level of authority or control exercised by the position and the degree of injury that could result from compromise of sensitive information, assets, or facilities to be accessed. The results of the position security analysis determine what level of inquiries, verifications and assessments are conducted for a position.",
+                  "name": "guidance"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ps-7",
+          "removes": [
+            {
+              "by-id": "ps-7_smt.d"
+            },
+            {
+              "by-id": "ps-7_smt.e"
+            }
+          ],
+          "adds": [
+            {
+              "position": "after",
+              "by-id": "ps-7_smt.c",
+              "parts": [
+                {
+                  "id": "ps-7_smt.d",
+                  "props": [
+                    {
+                      "value": "d.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "Require external providers to notify {{ insert: param, ps-07_odp.01 }} of any personnel transfers or terminations of external personnel who possess organizational credentials and/or badges, or who have system privileges within {{ insert: param, ps-07_odp.02 }} ;",
+                  "name": "item"
+                },
+                {
+                  "id": "ps-7_smt.e",
+                  "props": [
+                    {
+                      "value": "e.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "Monitor provider compliance with personnel security requirements;",
+                  "name": "item"
+                },
+                {
+                  "id": "ps-7_smt.aa",
+                  "props": [
+                    {
+                      "value": "aa.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "The organization ensures security screening of private sector organizations and individuals who have access to Protected and Classified information, assets, and facilities in accordance with the TBS Standard on Security Screening; and",
+                  "name": "item"
+                },
+                {
+                  "id": "ps-7_smt.bb",
+                  "props": [
+                    {
+                      "value": "bb.",
+                      "name": "label"
+                    }
+                  ],
+                  "prose": "The organization explicitly defines government oversight and end-user roles and responsibilities relative to third-party provided services in accordance with the TBS Directive on Security Management, Appendix F: Mandatory Procedures for Security in Contracts and Other Arrangements Control.",
+                  "name": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sa-4.10",
+          "removes": [
+            {
+              "by-id": "sa-4.10_smt"
+            },
+            {
+              "by-id": "sa-4.10_gdn"
+            }
+          ],
+          "adds": [
+            {
+              "position": "before",
+              "by-id": "sa-4.10_obj",
+              "parts": [
+                {
+                  "id": "sa-4.10_smt",
+                  "prose": "Employ only information technology products that are CCCS-recommended for digital credentials capability implemented within organizational systems.",
+                  "name": "statement"
+                },
+                {
+                  "id": "sa-4.10_gdn",
+                  "prose": "Products should meet CCCS requirements in ITSP.30.031 for authentication Level of Assurance (LoA) and Robustness Level (RL) for digital credentials of GC Employees and Contractors. Authentication tokens such as smart cards are used for multi-factor authentication in systems and organizations.",
+                  "name": "guidance"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-12.2",
+          "removes": [
+            {
+              "by-id": "sc-12.02_odp"
+            },
+            {
+              "by-id": "sc-12.2_gdn"
+            }
+          ],
+          "adds": [
+            {
+              "position": "starting",
+              "params": [
+                {
+                  "id": "sc-12.02_odp",
+                  "props": [
+                    {
+                      "name": "alt-identifier",
+                      "value": "sc-12.2_prm_1"
+                    },
+                    {
+                      "name": "label",
+                      "value": "SC-12(02)_ODP",
+                      "class": "sp800-53a"
+                    }
+                  ],
+                  "select": {
+                    "choice": [
+                      "CMVP-validated",
+                      "CCCS-approved",
+                      "prepositioned keying material"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "position": "after",
+              "by-id": "sc-12.2_smt",
+              "parts": [
+                {
+                  "id": "sc-12.2_gdn",
+                  "prose": "CCCS ITSP.40.111 provides recommendations for cryptographic key establishment schemes and key derivation functions that can be used to produce symmetric keys shared between two parties. These schemes are to be used in a network security protocol, such as those listed in CCCS ITSP.40.062 with further configuration guidance therein.",
+                  "name": "guidance"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-12.3",
+          "removes": [
+            {
+              "by-id": "sc-12.03_odp"
+            },
+            {
+              "by-id": "sc-12.3_gdn"
+            }
+          ],
+          "adds": [
+            {
+              "position": "starting",
+              "params": [
+                {
+                  "id": "sc-12.03_odp",
+                  "props": [
+                    {
+                      "name": "alt-identifier",
+                      "value": "sc-12.3_prm_1"
+                    },
+                    {
+                      "name": "label",
+                      "value": "SC-12(03)_ODP",
+                      "class": "sp800-53a"
+                    }
+                  ],
+                  "select": {
+                    "choice": [
+                      "CCCS-approved key management technology and processes;",
+                      "prepositioned keying material;",
+                      "CCCS-approved or CCCS-issued Medium Assurance PKI certificates;",
+                      "CCCS-approved or CCCS-issued Medium Hardware Assurance PKI certificates and hardware security tokens that protect the user's private key;",
+                      "certificates issued in accordance with organization-defined requirements"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "position": "after",
+              "by-id": "sc-12.3_smt",
+              "parts": [
+                {
+                  "id": "sc-12.3_gdn",
+                  "prose": "CCCS ITSP.40.111 provides recommendations for approved specifications of asymmetric cryptography and recommends that implementations, including key generation, execute within CMVP-validated cryptographic modules. CCCS ITSP.40.062 provides guidance on asymmetric key management within a Public Key Infrastructure (PKI).",
+                  "name": "guidance"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
