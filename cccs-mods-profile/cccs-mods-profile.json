@@ -14,9 +14,16 @@
         "include-all": {},
         "exclude-controls": [
           {
-            "with-ids": ["sc-19"]
+            "with-ids": [
+              "sc-19",
+              "si-3.9"
+            ]
           }
         ]
+      },
+      {
+        "href": "../cccs-control-catalog/cccs-control-catalog.json",
+        "include-all": {}
       }
     ],
     "merge": {
