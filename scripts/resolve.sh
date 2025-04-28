@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the list of profiles
-profiles=("mods" "medium" "pbhva-overlay" "medium+pbhva" "itsp.10.171")
+profiles=("mods" "cloud-medium" "pbhva-overlay" "medium+pbhva" "itsp.10.171" "itsp.10.033-01")
 
 # Validate the CCCS catalog
 echo "Validating CCCS catalog..."
