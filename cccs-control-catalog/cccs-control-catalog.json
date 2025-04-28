@@ -1,10 +1,17 @@
 {
   "catalog": {
     "uuid": "75505e0e-a09d-484a-a4a7-405dab6de2c9",
+    "metadata": {
+      "oscal-version": "1.1.2",
+      "last-modified": "2025-04-28T23:16:00Z",
+      "title": "CCCS Control Catalog",
+      "version": "1.1.0"
+    },
     "controls": [
       {
-        "class": "CCCS-enhancement",
         "id": "ac-17.400",
+        "class": "CCCS-enhancement",
+        "title": "Privileged Accounts Remote Access",
         "parts": [
           {
             "prose": "Access to privileged account remotely is only done from dedicated management consoles.",
@@ -31,14 +38,17 @@
             "name": "sort-id",
             "value": "ac-17.400"
           }
-        ],
-        "title": "Privileged Accounts Remote Access"
+        ]
       },
       {
-        "class": "CCCS",
         "id": "sc-19",
+        "class": "CCCS",
+        "title": "Voice Over Internet Protocol",
         "parts": [
           {
+            "prose": "The organization:",
+            "name": "statement",
+            "id": "sc-19_smt",
             "parts": [
               {
                 "props": [
@@ -62,31 +72,19 @@
                 "name": "item",
                 "id": "sc-19_smt.b"
               }
-            ],
-            "prose": "The organization:",
-            "name": "statement",
-            "id": "sc-19_smt"
+            ]
           },
           {
             "name": "guidance",
-            "links": [
-              {
-                "href": "#cm-6",
-                "rel": "related"
-              },
-              {
-                "href": "#sc-7",
-                "rel": "related"
-              },
-              {
-                "href": "#sc-15",
-                "rel": "related"
-              }
-            ],
             "id": "sc-19_gdn"
           }
         ],
         "props": [
+          {
+            "name": "label",
+            "class": "zero-padded",
+            "value": "SC-19"
+          },
           {
             "name": "label",
             "value": "SC-19"
@@ -95,16 +93,75 @@
             "name": "sort-id",
             "value": "sc-19"
           }
+        ]
+      },
+      {
+        "id": "si-400",
+        "class": "CCCS",
+        "title": "Dedicated Administration Workstation",
+        "parts": [
+          {
+            "name": "statement",
+            "id": "si-400_smt",
+            "parts": [
+              {
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "a."
+                  }
+                ],
+                "prose": "Require any administrative or superuser actions to be performed from a physical workstation which is dedicated to those specific tasks and isolated from all other functions and networks, and especially from any form of internet access.",
+                "name": "item",
+                "id": "si-400_smt.a"
+              },
+              {
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "b."
+                  }
+                ],
+                "prose": "Remote connection of a DAW to a target network is to use carrier private networks (e.g., virtual private LAN service (VPLS) or multiprotocol label switching (MPLS)) with VPN encryption.",
+                "name": "item",
+                "id": "si-400_smt.b"
+              },
+              {
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "c."
+                  }
+                ],
+                "prose": "Use a dedicated and hardened single-purpose physical workstation or thin client as the DAW, that is not shared between security realms.",
+                "name": "item",
+                "id": "si-400_smt.c"
+              }
+            ]
+          },
+          {
+            "name": "guidance",
+            "id": "sc-400_gdn",
+            "prose": "A dedicated administration workstation (DAW) is typically comprised of a user terminal with a very small selection of software designed for interfacing with the target system. For the purpose of this control, workstation means the system from which you are performing the administration, as opposed to the target system of administration. The DAW must be hardened for the role, in order to minimize the likelihood that a superuser’s or administrator’s endpoint may be compromised by any threat actor (which would logically lead to the compromise of the target system). Typical office productivity tools are not required on the DAW. All non-essential applications and services are removed. DAWs are not domain-joined, cannot download patches from the internet, and cannot update documentation in networked applications.\nRemoving public Internet access from administrative workstations substantially reduces risk of compromise. Internet-exposed VPN gateways are not preferred for remote administration, private carriers provide better protection, but still require VPN encryption within that network. The DAW must not become a means of moving laterally between security realms."
+          }
         ],
-        "title": "Voice Over Internet Protocol"
+        "props": [
+          {
+            "name": "label",
+            "class": "zero-padded",
+            "value": "SI-400"
+          },
+          {
+            "name": "label",
+            "value": "SI-400"
+          },
+          {
+            "name": "sort-id",
+            "value": "si-400"
+          }
+        ]
       }
     ],
-    "metadata": {
-      "oscal-version": "1.1.2",
-      "last-modified": "2024-09-16T23:16:00Z",
-      "title": "CCCS Control Catalog",
-      "version": "1.0.0"
-    },
     "back-matter": {}
   }
 }

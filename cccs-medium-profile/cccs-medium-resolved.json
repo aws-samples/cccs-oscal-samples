@@ -6,7 +6,7 @@
         "rel" : "source-profile",
         "href" : ""
       } ],
-      "last-modified" : "2025-04-28T13:44:14.086739Z",
+      "last-modified" : "2025-04-28T16:21:02.503014Z",
       "oscal-version" : "1.1.2",
       "props" : [ {
         "name" : "resolution-tool",
@@ -40,6 +40,10 @@
       "title" : "Privileged Accounts Remote Access"
     }, {
       "props" : [ {
+        "class" : "zero-padded",
+        "name" : "label",
+        "value" : "SC-19"
+      }, {
         "name" : "label",
         "value" : "SC-19"
       }, {
@@ -69,23 +73,13 @@
         } ]
       }, {
         "id" : "sc-19_gdn",
-        "links" : [ {
-          "rel" : "related",
-          "href" : "#cm-6"
-        }, {
-          "rel" : "related",
-          "href" : "#sc-7"
-        }, {
-          "rel" : "related",
-          "href" : "#sc-15"
-        } ],
         "name" : "guidance"
       } ],
       "id" : "sc-19",
       "class" : "CCCS",
       "title" : "Voice Over Internet Protocol"
     } ],
-    "uuid" : "62314fd8-205f-4f7a-ba95-816dd5ead977",
+    "uuid" : "3ed056f9-2fa6-4d81-a704-595d5deabb19",
     "groups" : [ {
       "id" : "ac",
       "title" : "Access Control",

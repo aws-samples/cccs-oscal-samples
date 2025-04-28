@@ -1,7 +1,13 @@
 #!/bin/bash
 
 # Define the list of profiles
-profiles=("mods" "medium" "pbhva-overlay" "medium+pbhva")
+profiles=("mods" "medium" "pbhva-overlay" "medium+pbhva" "itsp.10.171")
+
+# Validate the CCCS catalog
+echo "Validating CCCS catalog..."
+oscal-cli validate cccs-control-catalog/cccs-control-catalog.json
+echo "Finished validating CCCS catalog"
+echo
 
 # Loop through each profile
 for profile in "${profiles[@]}"; do
