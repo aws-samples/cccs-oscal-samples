@@ -11,14 +11,12 @@ For an introduction to key OSCAL concepts, please see the [documentation](https:
 CCCS' security guidance has been expressed in the following OSCAL files:
 
 1. `cccs-control-catalog.json` — This OSCAL catalog describes security controls that are not part of NIST 800-53.
-1. `cccs-mods-profile.json` — This OSCAL profile imports controls from the NIST 800-53 and CCCS[^1] catalogs and makes CCCS-specific modifications.
+1. `cccs-mods-profile.json` — This OSCAL profile imports controls from the NIST 800-53 and CCCS catalogs and makes CCCS-specific modifications.
 1. `cccs-medium-profile.json` — This OSCAL profile imports controls from the `cccs-mods` profile and sets parameters in accordance with the CCCS Medium security control profile.
 1. `cccs-pbhva-overlay-profile.json` — This OSCAL profile imports controls from the `cccs-mods` profile and sets parameters in accordance with the CCCS Protected B High Value Assets (PBHVA) security control overlay.
 1. `cccs-medium+pbhva-profile.json` - This OSCAL profile imports controls from the `cccs-mods` profile and sets parameters in accordance with both the CCCS Medium security control profile and the PBHVA overlay.
 
 This repo also incorporates NIST's [`oscal-content`](https://github.com/usnistgov/oscal-content/) repo as a submodule, which includes the NIST 800-53 catalog in OSCAL form.
-
-[^1]: CCCS controls are not currently imported due to https://github.com/aws-samples/cccs-oscal-samples/issues/1
 
 ## Profile resolution and CSV conversion
 
