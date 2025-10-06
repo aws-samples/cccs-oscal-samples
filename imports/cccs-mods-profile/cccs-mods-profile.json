@@ -397,15 +397,13 @@
                   "props": [
                     {
                       "value": "PE-03_ODP[11]",
-                      "name": "label",
-                      "class:": "sp800-53a"
+                      "name": "label"
                     },
                     {
                       "value": "pe-3_prm_11",
                       "name": "alt-identifier"
                     }
-                  ],
-                  "guideline": "frequency at which access is removed from lost identifiers;"
+                  ]
                 }
               ]
             },
@@ -613,8 +611,7 @@
                     },
                     {
                       "name": "label",
-                      "value": "SC-12(02)_ODP",
-                      "class": "sp800-53a"
+                      "value": "SC-12(02)_ODP"
                     }
                   ],
                   "select": {
@@ -663,8 +660,7 @@
                     },
                     {
                       "name": "label",
-                      "value": "SC-12(03)_ODP",
-                      "class": "sp800-53a"
+                      "value": "SC-12(03)_ODP"
                     }
                   ],
                   "select": {
