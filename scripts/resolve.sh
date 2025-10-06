@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the list of profiles
-profiles=("cloud-medium" "pbhva-overlay" "medium+pbhva" "itsp.10.171" "itsp.10.033-01")
+profiles=("cloud-medium" "pbhva-overlay" "medium+pbhva" "itsp.10.171" "itsp.10.033-01" "saas-fedramp")
 
 ##### Proess imports
 
