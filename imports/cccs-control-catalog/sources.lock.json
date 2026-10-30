@@ -1,0 +1,1092 @@
+{
+  "sources": {
+    "ac": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/access-control",
+      "title": "Access control",
+      "date-modified": "2026-03-31",
+      "sha256": "2fb6142167bed2b41f43119b18b7b5363386c3300eb9bf36c94a4ce74738baac"
+    },
+    "at": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/awareness-training",
+      "title": "Awareness and training",
+      "date-modified": "2026-03-31",
+      "sha256": "16b79fdbbfc556a61a3336a1b354643c9ac1d831c1f38dbcc82ff40648d20bb7"
+    },
+    "au": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/audit-accountability",
+      "title": "Audit and accountability",
+      "date-modified": "2026-03-31",
+      "sha256": "bddaab2ecfef34188010bcceb861fb792af2f8c635461926390d13efce390129"
+    },
+    "ca": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/assessment-authorization-monitoring",
+      "title": "Assessment, authorization, and monitoring",
+      "date-modified": "2026-03-31",
+      "sha256": "8ccca75fd1aa7e47cca3dbb5f9ae3151acc853182e82f93d40ba7002c2bd1f6d"
+    },
+    "cm": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/configuration-management",
+      "title": "Configuration management",
+      "date-modified": "2026-03-31",
+      "sha256": "3a4b342ebb32cbe7e8cf61a1124bcc0f67476d622316aad69381a1fedeac4220"
+    },
+    "cp": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/contingency-planning",
+      "title": "Contingency planning",
+      "date-modified": "2026-03-31",
+      "sha256": "8e1457f9ca293f5cddd360c871277b310861c199763d8b95ce10cda4295abdc0"
+    },
+    "ia": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/identification-authentication",
+      "title": "Identification and authentication",
+      "date-modified": "2026-03-31",
+      "sha256": "3c20497e449267e64c6f392c26f3b500b2c3c7fbb7f67322a37c9b73b99833d1"
+    },
+    "ir": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/incident-response",
+      "title": "Incident response",
+      "date-modified": "2026-03-31",
+      "sha256": "0efe94d9047aaab453897c9f6c21a0726af0150be2da3948126fb02e26c0fbc5"
+    },
+    "ma": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/maintenance",
+      "title": "Maintenance",
+      "date-modified": "2026-03-31",
+      "sha256": "656140fd99f2d07e51254dc8e83ad6aa2245ec14530fc2b4ca5736e5c92eb3ac"
+    },
+    "mp": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/media-protection",
+      "title": "Media protection",
+      "date-modified": "2026-03-31",
+      "sha256": "99460670f2e249c2f0ba236286c38a9f45010da41a30bc5af99dfeef0f3c2b54"
+    },
+    "pe": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/physical-environmental-protection",
+      "title": "Physical and environmental protection",
+      "date-modified": "2026-03-31",
+      "sha256": "0450c9c9e0f8ac36cb5b92a3721b561b034b07583b5f1a54c97971c85ec12ce4"
+    },
+    "pl": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/planning",
+      "title": "Planning",
+      "date-modified": "2026-03-31",
+      "sha256": "5fd13f58806d505dd4affe6a50de8acba892a2239260c7de292933b595891642"
+    },
+    "pm": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/program-management",
+      "title": "Program management",
+      "date-modified": "2026-03-31",
+      "sha256": "66e23956ba9d53b2ead303dd369ddde985018ae3cb836b3d499df46998c92386"
+    },
+    "ps": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/personnel-security",
+      "title": "Personnel security",
+      "date-modified": "2026-03-31",
+      "sha256": "33618e45ec9c0ce527a669d24601ae339ddc994f9fe6910e8a20d97c4b18cf57"
+    },
+    "pt": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/personal-information-handling-transparency",
+      "title": "Personal information handling and transparency",
+      "date-modified": "2026-03-31",
+      "sha256": "4f00ddcda41b0ff7e1bd57cad2f2673a5a40686282bb2fc8ebf6e1b9bb003319"
+    },
+    "ra": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/risk-assessment",
+      "title": "Risk assessment",
+      "date-modified": "2026-03-31",
+      "sha256": "f01de62c641ee6f30003039343bc5337eb06ad40872fd4a3fab24ec2aee9aa46"
+    },
+    "sa": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/system-services-acquisition",
+      "title": "System and services acquisition",
+      "date-modified": "2026-03-31",
+      "sha256": "36271d448bde1f55d44c8b72dccacbc0d6c761d74c78c775566358fee43767dc"
+    },
+    "sc": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/system-communications-protection",
+      "title": "System and communications protection",
+      "date-modified": "2026-03-31",
+      "sha256": "cbff688a6506d58b7b8090dcddc45e78f6ca529d74f24e65eebd875b70549559"
+    },
+    "si": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/system-information-integrity",
+      "title": "System and information integrity",
+      "date-modified": "2026-03-31",
+      "sha256": "58e68b4af46b7bc39f0dbcd3473fa27ce09fd3dbd6b4a97d85b3e99cee4a0436"
+    },
+    "sr": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033/supply-chain-risk-management",
+      "title": "Supply chain risk management",
+      "date-modified": "2026-03-31",
+      "sha256": "366ad50fb303994e7647c5f2ea5464c5e8286dfb392ffffcc18e604f93ef4f43"
+    },
+    "medium": {
+      "url": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/suggested-organizational-security-privacy-control-activity-profile-medium-impact-itsp10033-01",
+      "title": "Suggested organizational security and privacy control and activity profile — Medium impact (ITSP.10.033-01)",
+      "date-modified": "2026-04-02",
+      "sha256": "3db1e3b4f81afd6624dde8a073b9ec8e77e6cd415dd184b6e0323cfd7954a5d4"
+    },
+    "itsp171": {
+      "url": "https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171",
+      "title": "Protecting specified information in non-Government of Canada systems and organizations (ITSP.10.171)",
+      "date-modified": "2025-10-28",
+      "sha256": "a83976d9aa1288781615e5fec39fa0b00fd4652d00c976aa8f96052ef2ccb254"
+    },
+    "nist-parameter-identifiers": {
+      "url": "https://raw.githubusercontent.com/usnistgov/oscal-content/f0de6d8d8c059d374f15e0ae07508d82e370fc1d/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json",
+      "commit": "f0de6d8d8c059d374f15e0ae07508d82e370fc1d",
+      "sha256": "64ca6b4161de51ab6af098a7d101d326f14c95e1abf721396cd8a049e8115eeb"
+    }
+  },
+  "counts": {
+    "ac": 151,
+    "at": 17,
+    "au": 69,
+    "ca": 32,
+    "cm": 66,
+    "cp": 56,
+    "ia": 78,
+    "ir": 42,
+    "ma": 30,
+    "mp": 30,
+    "pe": 66,
+    "pl": 17,
+    "pm": 37,
+    "ps": 20,
+    "pt": 23,
+    "ra": 27,
+    "sa": 158,
+    "sc": 176,
+    "si": 126,
+    "sr": 27
+  },
+  "cccs-parameters": [
+    {
+      "control-id": "ac-3.8",
+      "param-id": "ac-3.8_cccs_odp.01",
+      "source": "[Assignment: organization-defined rules governing the timing of revocations of access authorizations]"
+    },
+    {
+      "control-id": "ac-3.13",
+      "param-id": "ac-3.13_cccs_odp.01",
+      "source": "[Assignment: organization-defined attributes to assume access permissions]"
+    },
+    {
+      "control-id": "ac-5",
+      "param-id": "ac-5_cccs_odp.01",
+      "source": "[Assignment: organization-defined duties of individuals requiring separation]"
+    },
+    {
+      "control-id": "ac-6.1",
+      "param-id": "ac-6.1_cccs_odp.01",
+      "source": "[Assignment: organization-defined individuals or roles]"
+    },
+    {
+      "control-id": "ac-8",
+      "param-id": "ac-8_cccs_odp.01",
+      "source": "[Assignment: organization-defined system use notification message or banner]"
+    },
+    {
+      "control-id": "ac-9.3",
+      "param-id": "ac-9.3_cccs_odp.01",
+      "source": "[Assignment: organization-defined security-related characteristics or parameters of the user’s account]"
+    },
+    {
+      "control-id": "ac-12.3",
+      "param-id": "ac-12.3_cccs_odp.01",
+      "source": "[Assignment: organization-defined time until end of session]"
+    },
+    {
+      "control-id": "ac-16",
+      "param-id": "ac-16_cccs_odp.05",
+      "source": "[Assignment: organization-defined attribute values or ranges for established attributes]"
+    },
+    {
+      "control-id": "ac-16.5",
+      "param-id": "ac-16.5_cccs_odp.01",
+      "source": "[Assignment: organization-defined special dissemination, handling, or distribution instructions]"
+    },
+    {
+      "control-id": "ac-16.5",
+      "param-id": "ac-16.5_cccs_odp.02",
+      "source": "[Assignment: organization-defined human-readable, standard naming conventions]"
+    },
+    {
+      "control-id": "ac-20",
+      "param-id": "ac-20_cccs_odp.03",
+      "source": "[Assignment: organization-defined controls asserted to be implemented on external systems]"
+    },
+    {
+      "control-id": "ac-20",
+      "param-id": "ac-20_cccs_odp.04",
+      "source": "[Assignment: organizationally-defined types of external systems]"
+    },
+    {
+      "control-id": "ac-21",
+      "param-id": "ac-21_cccs_odp.01",
+      "source": "[Assignment: organization-defined information sharing circumstances where user discretion is required]"
+    },
+    {
+      "control-id": "ac-21",
+      "param-id": "ac-21_cccs_odp.02",
+      "source": "[Assignment: organization-defined automated mechanisms or manual processes]"
+    },
+    {
+      "control-id": "ac-23",
+      "param-id": "ac-23_cccs_odp.01",
+      "source": "[Assignment: organization-defined data mining prevention and detection techniques]"
+    },
+    {
+      "control-id": "au-12.1",
+      "param-id": "au-12.1_cccs_odp.02",
+      "source": "[Assignment: organization-defined level of tolerance for the relationship between time stamps of individual records in the audit trail]"
+    },
+    {
+      "control-id": "ca-2.2",
+      "param-id": "ca-2.2_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "ca-9",
+      "param-id": "ca-9_cccs_odp.01",
+      "source": "[Assignment: organization-defined system components or classes of components]"
+    },
+    {
+      "control-id": "cm-7.2",
+      "param-id": "cm-7.2_cccs_odp.02",
+      "source": "[Assignment: organization-defined policies, rules of behaviour, and/or access agreements regarding software program usage and restrictions]"
+    },
+    {
+      "control-id": "cm-7.3",
+      "param-id": "cm-7.3_cccs_odp.01",
+      "source": "[Assignment: organization-defined registration requirements for functions, ports, protocols, and services]"
+    },
+    {
+      "control-id": "cm-7.4",
+      "param-id": "cm-7.4_cccs_odp.01",
+      "source": "[Assignment: organization-defined software programs not authorized to execute on the system]"
+    },
+    {
+      "control-id": "cm-7.9",
+      "param-id": "cm-7.9_cccs_odp.01",
+      "source": "[Assignment: organization-defined hardware components authorized for system use]"
+    },
+    {
+      "control-id": "cp-7",
+      "param-id": "cp-7_cccs_odp.02",
+      "source": "[Assignment: organization-defined time period consistent with recovery time and recovery point objectives]"
+    },
+    {
+      "control-id": "cp-12",
+      "param-id": "cp-12_cccs_odp.02",
+      "source": "[Assignment: organization-defined restrictions of safe mode of operation]"
+    },
+    {
+      "control-id": "ia-11",
+      "param-id": "ia-11_cccs_odp.01",
+      "source": "[Assignment: organization-defined circumstances or situations requiring re-authentication]"
+    },
+    {
+      "control-id": "ia-12.3",
+      "param-id": "ia-12.3_cccs_odp.01",
+      "source": "[Assignment: organizational defined methods of validation and verification]"
+    },
+    {
+      "control-id": "ia-13",
+      "param-id": "ia-13_cccs_odp.01",
+      "source": "[Assignment: organization-defined identification and authentication policy]"
+    },
+    {
+      "control-id": "ia-13.3",
+      "param-id": "ia-13.3_cccs_odp.01",
+      "source": "[Assignment: organization-defined identification and authentication policy]"
+    },
+    {
+      "control-id": "ir-4.3",
+      "param-id": "ir-4.3_cccs_odp.02",
+      "source": "[Assignment: organization-defined actions to take in response to classes of incidents]"
+    },
+    {
+      "control-id": "ma-4.5",
+      "param-id": "ma-4.5_cccs_odp.02",
+      "source": "[Assignment: organization-defined personnel or roles]"
+    },
+    {
+      "control-id": "mp-6.3",
+      "param-id": "mp-6.3_cccs_odp.01",
+      "source": "[Assignment: organization-defined circumstances requiring sanitization of portable storage devices]"
+    },
+    {
+      "control-id": "pe-3",
+      "param-id": "pe-3_cccs_odp.03",
+      "source": "[Assignment: organization-defined physical access control systems or devices]"
+    },
+    {
+      "control-id": "pe-3.1",
+      "param-id": "pe-3.1_cccs_odp.01",
+      "source": "[Assignment: organization-defined physical spaces containing one or more components of the system]"
+    },
+    {
+      "control-id": "pe-3.8",
+      "param-id": "pe-3.8_cccs_odp.01",
+      "source": "[Assignment: organization-defined locations within the facility]"
+    },
+    {
+      "control-id": "pe-6",
+      "param-id": "pe-6_cccs_odp.02",
+      "source": "[Assignment: organization-defined events or potential indications of events]"
+    },
+    {
+      "control-id": "pe-6.4",
+      "param-id": "pe-6.4_cccs_odp.01",
+      "source": "[Assignment: organization-defined physical spaces containing one or more components of the system]"
+    },
+    {
+      "control-id": "pe-21",
+      "param-id": "pe-21_cccs_odp.02",
+      "source": "[Assignment: organization-defined systems and system components]"
+    },
+    {
+      "control-id": "pm-32",
+      "param-id": "pm-32_cccs_odp.01",
+      "source": "[Assignment: organization-defined systems or systems components]"
+    },
+    {
+      "control-id": "pt-2",
+      "param-id": "pt-2_cccs_odp.02",
+      "source": "[Assignment: organization-defined collection and use]"
+    },
+    {
+      "control-id": "pt-2",
+      "param-id": "pt-2_cccs_odp.03",
+      "source": "[Assignment: organization-defined collection and use]"
+    },
+    {
+      "control-id": "pt-2.1",
+      "param-id": "pt-2.1_cccs_odp.01",
+      "source": "[Assignment: organization-defined authorized handling]"
+    },
+    {
+      "control-id": "pt-2.1",
+      "param-id": "pt-2.1_cccs_odp.02",
+      "source": "[Assignment: organization-defined elements of personal information]"
+    },
+    {
+      "control-id": "pt-3",
+      "param-id": "pt-3_cccs_odp.01",
+      "source": "[Assignment: organization-defined use(s) and disclosure(s)]"
+    },
+    {
+      "control-id": "pt-3",
+      "param-id": "pt-3_cccs_odp.02",
+      "source": "[Assignment: organization-defined use(s) and disclosure(s)]"
+    },
+    {
+      "control-id": "pt-3",
+      "param-id": "pt-3_cccs_odp.04",
+      "source": "[Assignment: identified legislative requirements]"
+    },
+    {
+      "control-id": "pt-3.1",
+      "param-id": "pt-3.1_cccs_odp.01",
+      "source": "[Assignment: organization-defined elements of personal information]"
+    },
+    {
+      "control-id": "pt-3.1",
+      "param-id": "pt-3.1_cccs_odp.02",
+      "source": "[Assignment: organization-defined handling purposes]"
+    },
+    {
+      "control-id": "pt-4",
+      "param-id": "pt-4_cccs_odp.02",
+      "source": "[Assignment: organization-defined tools or mechanisms]"
+    },
+    {
+      "control-id": "pt-4.2",
+      "param-id": "pt-4.2_cccs_odp.03",
+      "source": "[Assignment: organization-defined personal information handling]"
+    },
+    {
+      "control-id": "pt-4.400",
+      "param-id": "pt-4.400_cccs_odp.01",
+      "source": "[Assignment: organization-defined mechanisms]"
+    },
+    {
+      "control-id": "pt-6",
+      "param-id": "pt-6_cccs_odp.01",
+      "source": "[Assignment: organization-defined roles or personnel]"
+    },
+    {
+      "control-id": "pt-7",
+      "param-id": "pt-7_cccs_odp.01",
+      "source": "[Assignment: organization-defined handling conditions]"
+    },
+    {
+      "control-id": "pt-7.400",
+      "param-id": "pt-7.400_cccs_odp.01",
+      "source": "[Assignment: organization-defined tools or mechanisms]"
+    },
+    {
+      "control-id": "pt-8",
+      "param-id": "pt-8_cccs_odp.01",
+      "source": "[Selection (1): notice to the individual; consent obtained from the individual]"
+    },
+    {
+      "control-id": "sa-4.3",
+      "param-id": "sa-4.3_cccs_odp.03",
+      "source": "[Assignment: organization-defined systems security engineering methods]"
+    },
+    {
+      "control-id": "sa-4.3",
+      "param-id": "sa-4.3_cccs_odp.05",
+      "source": "[Assignment: organization-defined software development methods; testing, evaluation, assessment, verification, and validation methods; and quality control processes]"
+    },
+    {
+      "control-id": "sa-9.5",
+      "param-id": "sa-9.5_cccs_odp.03",
+      "source": "[Assignment: organization-defined requirements or conditions]"
+    },
+    {
+      "control-id": "sa-10",
+      "param-id": "sa-10_cccs_odp.02",
+      "source": "[Assignment: organization-defined configuration items under configuration management]"
+    },
+    {
+      "control-id": "sa-11",
+      "param-id": "sa-11_cccs_odp.02",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "sa-11.2",
+      "param-id": "sa-11.2_cccs_odp.01",
+      "source": "[Assignment: organization-defined information concerning impact, environment of operations, known or assumed threats, and acceptable risk levels]"
+    },
+    {
+      "control-id": "sa-11.2",
+      "param-id": "sa-11.2_cccs_odp.03",
+      "source": "[Assignment: organization-defined breadth and depth of modelling and analyses]"
+    },
+    {
+      "control-id": "sa-15.1",
+      "param-id": "sa-15.1_cccs_odp.03",
+      "source": "[Assignment: organization-defined program review milestones]"
+    },
+    {
+      "control-id": "sa-15.3",
+      "param-id": "sa-15.3_cccs_odp.01",
+      "source": "[Assignment: organization-defined decision points in the system development lifecycle]"
+    },
+    {
+      "control-id": "sa-15.13",
+      "param-id": "sa-15.13_cccs_odp.01",
+      "source": "[Assignment: organization-defined secure logging format]"
+    },
+    {
+      "control-id": "sa-15.13",
+      "param-id": "sa-15.13_cccs_odp.02",
+      "source": "[assignment: organization-defined event types]"
+    },
+    {
+      "control-id": "sa-15.13",
+      "param-id": "sa-15.13_cccs_odp.03",
+      "source": "[assignment: organization-defined level of detail]"
+    },
+    {
+      "control-id": "sa-17.8",
+      "param-id": "sa-17.8_cccs_odp.01",
+      "source": "[Assignment: organization-defined critical systems or system components]"
+    },
+    {
+      "control-id": "sa-17.8",
+      "param-id": "sa-17.8_cccs_odp.02",
+      "source": "[Assignment: organization-defined capabilities, by system or component]"
+    },
+    {
+      "control-id": "sa-17.9",
+      "param-id": "sa-17.9_cccs_odp.01",
+      "source": "[Assignment: organization-defined critical systems or system components]"
+    },
+    {
+      "control-id": "sa-20",
+      "param-id": "sa-20_cccs_odp.01",
+      "source": "[Assignment: organization-defined critical system components]"
+    },
+    {
+      "control-id": "sa-21",
+      "param-id": "sa-21_cccs_odp.01",
+      "source": "[Assignment: organization-defined system, system component, or system service]"
+    },
+    {
+      "control-id": "sa-400",
+      "param-id": "sa-400_cccs_odp.01",
+      "source": "[Selection (1 or more): organization-level, mission/business-level, system-level]"
+    },
+    {
+      "control-id": "sc-7.24",
+      "param-id": "sc-7.24_cccs_odp.01",
+      "source": "[Assignment: organization-defined handling rules]"
+    },
+    {
+      "control-id": "sc-12",
+      "param-id": "sc-12_cccs_odp.01",
+      "source": "[Assignment: organization-defined requirements for key generation, distribution, storage, access, and destruction]"
+    },
+    {
+      "control-id": "sc-13",
+      "param-id": "sc-13_cccs_odp.02",
+      "source": "[Assignment: organization-defined types of cryptography for each specified cryptographic use]"
+    },
+    {
+      "control-id": "sc-18.2",
+      "param-id": "sc-18.2_cccs_odp.01",
+      "source": "[Assignment: organization-defined unacceptable mobile code]"
+    },
+    {
+      "control-id": "sc-23.5",
+      "param-id": "sc-23.5_cccs_odp.01",
+      "source": "[Assignment: organization-defined certificate authorities]"
+    },
+    {
+      "control-id": "sc-24",
+      "param-id": "sc-24_cccs_odp.03",
+      "source": "[Assignment: list of organization-defined types of system failures on organization-defined system components]"
+    },
+    {
+      "control-id": "sc-32",
+      "param-id": "sc-32_cccs_odp.03",
+      "source": "[Assignment: organization-defined circumstances for physical or logical separation of components]"
+    },
+    {
+      "control-id": "sc-43",
+      "param-id": "sc-43_cccs_odp.01",
+      "source": "[Assignment: organization-defined system components]"
+    },
+    {
+      "control-id": "sc-47",
+      "param-id": "sc-47_cccs_odp.01",
+      "source": "[Assignment: organization-defined alternate communications paths]"
+    },
+    {
+      "control-id": "si-2.4",
+      "param-id": "si-2.4_cccs_odp.01",
+      "source": "[Assignment: organization-defined system components]"
+    },
+    {
+      "control-id": "si-4.7",
+      "param-id": "si-4.7_cccs_odp.01",
+      "source": "[Assignment: organization-defined incident response personnel (identified by name and/or by role)]"
+    },
+    {
+      "control-id": "si-4.7",
+      "param-id": "si-4.7_cccs_odp.02",
+      "source": "[Assignment: organization-defined least-disruptive actions to terminate suspicious events]"
+    },
+    {
+      "control-id": "si-4.11",
+      "param-id": "si-4.11_cccs_odp.01",
+      "source": "[Assignment: organization-defined internal points within the system]"
+    },
+    {
+      "control-id": "si-4.18",
+      "param-id": "si-4.18_cccs_odp.01",
+      "source": "[Assignment: organization-defined interior points within the system]"
+    },
+    {
+      "control-id": "si-5",
+      "param-id": "si-5_cccs_odp.04",
+      "source": "[Assignment: organization-defined elements within the organization]"
+    },
+    {
+      "control-id": "si-7.7",
+      "param-id": "si-7.7_cccs_odp.01",
+      "source": "[Assignment: organization-defined security-relevant changes to the system]"
+    },
+    {
+      "control-id": "si-7.12",
+      "param-id": "si-7.12_cccs_odp.01",
+      "source": "[Assignment: organization-defined software]"
+    },
+    {
+      "control-id": "si-10",
+      "param-id": "si-10_cccs_odp.01",
+      "source": "[Assignment: organization-defined information inputs to the system]"
+    },
+    {
+      "control-id": "si-10.1",
+      "param-id": "si-10.1_cccs_odp.01",
+      "source": "[Assignment: organization-defined inputs defined in the base control (SI-10)]"
+    },
+    {
+      "control-id": "si-12.1",
+      "param-id": "si-12.1_cccs_odp.01",
+      "source": "[Assignment: organization-defined elements of personal information]"
+    },
+    {
+      "control-id": "si-13",
+      "param-id": "si-13_cccs_odp.02",
+      "source": "[Assignment: organization-defined MTTF substitution criteria]"
+    },
+    {
+      "control-id": "si-18.5",
+      "param-id": "si-18.5_cccs_odp.01",
+      "source": "[Assignment: organization-defined recipients of personal information]"
+    },
+    {
+      "control-id": "si-19",
+      "param-id": "si-19_cccs_odp.01",
+      "source": "[Assignment: organization-defined elements of personal information]"
+    },
+    {
+      "control-id": "sr-2.1",
+      "param-id": "sr-2.1_cccs_odp.02",
+      "source": "[Assignment: organization-defined SCRM activities]"
+    },
+    {
+      "control-id": "sr-4.1",
+      "param-id": "sr-4.1_cccs_odp.01",
+      "source": "[Assignment: organization-defined supply chain elements, processes, and personnel associated with organization-defined systems and critical system components]"
+    },
+    {
+      "control-id": "sr-4.4",
+      "param-id": "sr-4.4_cccs_odp.02",
+      "source": "[Assignment: organization-defined analysis]"
+    },
+    {
+      "control-id": "sr-5",
+      "param-id": "sr-5_cccs_odp.01",
+      "source": "[Assignment: organization-defined acquisition strategies, contract tools, and procurement methods]"
+    },
+    {
+      "control-id": "sr-8",
+      "param-id": "sr-8_cccs_odp.02",
+      "source": "[Assignment: organization-defined information]"
+    },
+    {
+      "control-id": "itsp171-03.01.01",
+      "param-id": "itsp171-03.01.01_cccs_odp.01",
+      "source": "[Assignment: organization-defined time period]"
+    },
+    {
+      "control-id": "itsp171-03.01.01",
+      "param-id": "itsp171-03.01.01_cccs_odp.02",
+      "source": "[Assignment: organization-defined time period]"
+    },
+    {
+      "control-id": "itsp171-03.01.01",
+      "param-id": "itsp171-03.01.01_cccs_odp.03",
+      "source": "[Assignment: organization-defined time period]"
+    },
+    {
+      "control-id": "itsp171-03.01.01",
+      "param-id": "itsp171-03.01.01_cccs_odp.04",
+      "source": "[Assignment: organization-defined time period]"
+    },
+    {
+      "control-id": "itsp171-03.01.01",
+      "param-id": "itsp171-03.01.01_cccs_odp.05",
+      "source": "[Assignment: organization-defined time period]"
+    },
+    {
+      "control-id": "itsp171-03.01.01",
+      "param-id": "itsp171-03.01.01_cccs_odp.06",
+      "source": "[Assignment: organization-defined circumstances]"
+    },
+    {
+      "control-id": "itsp171-03.01.05",
+      "param-id": "itsp171-03.01.05_cccs_odp.01",
+      "source": "[Assignment: organization-defined security functions]"
+    },
+    {
+      "control-id": "itsp171-03.01.05",
+      "param-id": "itsp171-03.01.05_cccs_odp.02",
+      "source": "[Assignment: organization-defined security-relevant information]"
+    },
+    {
+      "control-id": "itsp171-03.01.05",
+      "param-id": "itsp171-03.01.05_cccs_odp.03",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.01.06",
+      "param-id": "itsp171-03.01.06_cccs_odp.01",
+      "source": "[Assignment: organization-defined personnel or roles]"
+    },
+    {
+      "control-id": "itsp171-03.01.08",
+      "param-id": "itsp171-03.01.08_cccs_odp.01",
+      "source": "[Assignment: organization-defined number]"
+    },
+    {
+      "control-id": "itsp171-03.01.08",
+      "param-id": "itsp171-03.01.08_cccs_odp.02",
+      "source": "[Assignment: organization-defined time period]"
+    },
+    {
+      "control-id": "itsp171-03.01.08",
+      "param-id": "itsp171-03.01.08_cccs_odp.03",
+      "source": "[Selection (one or more): lock the account or node for an [Assignment: organization-defined time period]; lock the account or node until released by an administrator; delay next logon prompt; notify system administrator; take other action]"
+    },
+    {
+      "control-id": "itsp171-03.01.08",
+      "param-id": "itsp171-03.01.08_cccs_odp.04",
+      "source": "[Assignment: organization-defined time period]"
+    },
+    {
+      "control-id": "itsp171-03.01.10",
+      "param-id": "itsp171-03.01.10_cccs_odp.01",
+      "source": "[Selection (one or more): initiating a device lock after [Assignment: organization-defined time period] of inactivity; requiring the user to initiate a device lock before leaving the system unattended]"
+    },
+    {
+      "control-id": "itsp171-03.01.10",
+      "param-id": "itsp171-03.01.10_cccs_odp.02",
+      "source": "[Assignment: organization-defined time period]"
+    },
+    {
+      "control-id": "itsp171-03.01.11",
+      "param-id": "itsp171-03.01.11_cccs_odp.01",
+      "source": "[Assignment: organization-defined conditions or trigger events requiring session disconnect]"
+    },
+    {
+      "control-id": "itsp171-03.01.20",
+      "param-id": "itsp171-03.01.20_cccs_odp.01",
+      "source": "[Assignment: organization-defined security requirements]"
+    },
+    {
+      "control-id": "itsp171-03.02.01",
+      "param-id": "itsp171-03.02.01_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.02.01",
+      "param-id": "itsp171-03.02.01_cccs_odp.02",
+      "source": "[Assignment: organization-defined events]"
+    },
+    {
+      "control-id": "itsp171-03.02.01",
+      "param-id": "itsp171-03.02.01_cccs_odp.03",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.02.01",
+      "param-id": "itsp171-03.02.01_cccs_odp.04",
+      "source": "[Assignment: organization-defined events]"
+    },
+    {
+      "control-id": "itsp171-03.02.02",
+      "param-id": "itsp171-03.02.02_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.02.02",
+      "param-id": "itsp171-03.02.02_cccs_odp.02",
+      "source": "[Assignment: organization-defined events]"
+    },
+    {
+      "control-id": "itsp171-03.02.02",
+      "param-id": "itsp171-03.02.02_cccs_odp.03",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.02.02",
+      "param-id": "itsp171-03.02.02_cccs_odp.04",
+      "source": "[Assignment: organization-defined events]"
+    },
+    {
+      "control-id": "itsp171-03.03.01",
+      "param-id": "itsp171-03.03.01_cccs_odp.01",
+      "source": "[Assignment: organization-defined event types]"
+    },
+    {
+      "control-id": "itsp171-03.03.01",
+      "param-id": "itsp171-03.03.01_cccs_odp.02",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.03.04",
+      "param-id": "itsp171-03.03.04_cccs_odp.01",
+      "source": "[Assignment: organization-defined time period]"
+    },
+    {
+      "control-id": "itsp171-03.03.04",
+      "param-id": "itsp171-03.03.04_cccs_odp.02",
+      "source": "[Assignment: organization-defined additional actions]"
+    },
+    {
+      "control-id": "itsp171-03.03.05",
+      "param-id": "itsp171-03.03.05_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.03.07",
+      "param-id": "itsp171-03.03.07_cccs_odp.01",
+      "source": "[Assignment: organization-defined granularity of time measurement]"
+    },
+    {
+      "control-id": "itsp171-03.04.01",
+      "param-id": "itsp171-03.04.01_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.04.02",
+      "param-id": "itsp171-03.04.02_cccs_odp.01",
+      "source": "[Assignment: organization-defined configuration settings]"
+    },
+    {
+      "control-id": "itsp171-03.04.06",
+      "param-id": "itsp171-03.04.06_cccs_odp.01",
+      "source": "[Assignment: organization-defined functions, ports, protocols, connections, and services]"
+    },
+    {
+      "control-id": "itsp171-03.04.06",
+      "param-id": "itsp171-03.04.06_cccs_odp.02",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.04.08",
+      "param-id": "itsp171-03.04.08_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.04.10",
+      "param-id": "itsp171-03.04.10_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.04.12",
+      "param-id": "itsp171-03.04.12_cccs_odp.01",
+      "source": "[Assignment: organization-defined system configurations]"
+    },
+    {
+      "control-id": "itsp171-03.04.12",
+      "param-id": "itsp171-03.04.12_cccs_odp.02",
+      "source": "[Assignment: organization-defined security requirements]"
+    },
+    {
+      "control-id": "itsp171-03.05.01",
+      "param-id": "itsp171-03.05.01_cccs_odp.01",
+      "source": "[Assignment: organization-defined circumstances or situations requiring re-authentication]"
+    },
+    {
+      "control-id": "itsp171-03.05.02",
+      "param-id": "itsp171-03.05.02_cccs_odp.01",
+      "source": "[Assignment: organization-defined devices or types of devices]"
+    },
+    {
+      "control-id": "itsp171-03.05.05",
+      "param-id": "itsp171-03.05.05_cccs_odp.01",
+      "source": "[Assignment: organization-defined time period]"
+    },
+    {
+      "control-id": "itsp171-03.05.05",
+      "param-id": "itsp171-03.05.05_cccs_odp.02",
+      "source": "[Assignment: organization-defined characteristic identifying individual status]"
+    },
+    {
+      "control-id": "itsp171-03.05.07",
+      "param-id": "itsp171-03.05.07_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.05.07",
+      "param-id": "itsp171-03.05.07_cccs_odp.02",
+      "source": "[Assignment: organization-defined composition and complexity rules]"
+    },
+    {
+      "control-id": "itsp171-03.05.12",
+      "param-id": "itsp171-03.05.12_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.05.12",
+      "param-id": "itsp171-03.05.12_cccs_odp.02",
+      "source": "[Assignment: organization-defined events]"
+    },
+    {
+      "control-id": "itsp171-03.06.02",
+      "param-id": "itsp171-03.06.02_cccs_odp.01",
+      "source": "[Assignment: organization-defined time period]"
+    },
+    {
+      "control-id": "itsp171-03.06.02",
+      "param-id": "itsp171-03.06.02_cccs_odp.02",
+      "source": "[Assignment: organization-defined authorities]"
+    },
+    {
+      "control-id": "itsp171-03.06.03",
+      "param-id": "itsp171-03.06.03_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.06.04",
+      "param-id": "itsp171-03.06.04_cccs_odp.01",
+      "source": "[Assignment: organization-defined time period]"
+    },
+    {
+      "control-id": "itsp171-03.06.04",
+      "param-id": "itsp171-03.06.04_cccs_odp.02",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.06.04",
+      "param-id": "itsp171-03.06.04_cccs_odp.03",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.06.04",
+      "param-id": "itsp171-03.06.04_cccs_odp.04",
+      "source": "[Assignment: organization-defined events]"
+    },
+    {
+      "control-id": "itsp171-03.08.07",
+      "param-id": "itsp171-03.08.07_cccs_odp.01",
+      "source": "[Assignment: organization-defined types of system media]"
+    },
+    {
+      "control-id": "itsp171-03.09.01",
+      "param-id": "itsp171-03.09.01_cccs_odp.01",
+      "source": "[Assignment: organization-defined conditions requiring rescreening]"
+    },
+    {
+      "control-id": "itsp171-03.09.02",
+      "param-id": "itsp171-03.09.02_cccs_odp.01",
+      "source": "[Assignment: organization-defined time period]"
+    },
+    {
+      "control-id": "itsp171-03.10.01",
+      "param-id": "itsp171-03.10.01_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.10.02",
+      "param-id": "itsp171-03.10.02_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.10.02",
+      "param-id": "itsp171-03.10.02_cccs_odp.02",
+      "source": "[Assignment: organization-defined events or potential indications of events]"
+    },
+    {
+      "control-id": "itsp171-03.10.06",
+      "param-id": "itsp171-03.10.06_cccs_odp.01",
+      "source": "[Assignment: organization-defined security requirements]"
+    },
+    {
+      "control-id": "itsp171-03.11.01",
+      "param-id": "itsp171-03.11.01_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.11.02",
+      "param-id": "itsp171-03.11.02_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.11.02",
+      "param-id": "itsp171-03.11.02_cccs_odp.02",
+      "source": "[Assignment: organization-defined response times]"
+    },
+    {
+      "control-id": "itsp171-03.11.02",
+      "param-id": "itsp171-03.11.02_cccs_odp.03",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.12.01",
+      "param-id": "itsp171-03.12.01_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.12.05",
+      "param-id": "itsp171-03.12.05_cccs_odp.01",
+      "source": "[Selection (one or more): interconnection security agreements; information exchange security agreements; memoranda of understanding or agreement; information sharing arrangements; service level agreements; user agreements; nondisclosure agreements]"
+    },
+    {
+      "control-id": "itsp171-03.12.05",
+      "param-id": "itsp171-03.12.05_cccs_odp.02",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.13.09",
+      "param-id": "itsp171-03.13.09_cccs_odp.01",
+      "source": "[Assignment: organization-defined time period]"
+    },
+    {
+      "control-id": "itsp171-03.13.10",
+      "param-id": "itsp171-03.13.10_cccs_odp.01",
+      "source": "[Assignment: organization-defined requirements for key generation, distribution, storage, access, and destruction]"
+    },
+    {
+      "control-id": "itsp171-03.13.11",
+      "param-id": "itsp171-03.13.11_cccs_odp.01",
+      "source": "[Assignment: organization-defined types of cryptography]"
+    },
+    {
+      "control-id": "itsp171-03.13.12",
+      "param-id": "itsp171-03.13.12_cccs_odp.01",
+      "source": "[Assignment: organization-defined exceptions where remote activation is to be allowed]"
+    },
+    {
+      "control-id": "itsp171-03.14.01",
+      "param-id": "itsp171-03.14.01_cccs_odp.01",
+      "source": "[Assignment: organization-defined time period]"
+    },
+    {
+      "control-id": "itsp171-03.14.02",
+      "param-id": "itsp171-03.14.02_cccs_odp.01",
+      "source": "[assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.15.01",
+      "param-id": "itsp171-03.15.01_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.15.02",
+      "param-id": "itsp171-03.15.02_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.15.03",
+      "param-id": "itsp171-03.15.03_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.16.01",
+      "param-id": "itsp171-03.16.01_cccs_odp.01",
+      "source": "[Assignment: organization-defined systems security engineering principles]"
+    },
+    {
+      "control-id": "itsp171-03.16.03",
+      "param-id": "itsp171-03.16.03_cccs_odp.01",
+      "source": "[Assignment: organization-defined security requirements]"
+    },
+    {
+      "control-id": "itsp171-03.17.01",
+      "param-id": "itsp171-03.17.01_cccs_odp.01",
+      "source": "[Assignment: organization-defined frequency]"
+    },
+    {
+      "control-id": "itsp171-03.17.03",
+      "param-id": "itsp171-03.17.03_cccs_odp.01",
+      "source": "[Assignment: organization-defined security requirements]"
+    }
+  ],
+  "itsp171-requirements": 131,
+  "profile-coverage": {
+    "medium": {
+      "Selected": 380,
+      "Not selected": 617,
+      "NA": 188,
+      "Deployed organization-wide. Not associated with baseline.": 37,
+      "Not allocated to baseline.": 23
+    },
+    "itsp171": {
+      "C": 157,
+      "NCO": 155,
+      "ORC": 34,
+      "GC": 34,
+      "N/A": 60
+    }
+  }
+}

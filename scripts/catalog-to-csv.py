@@ -1,108 +1,135 @@
+import argparse
 import csv
 import json
 import re
-import sys
+from pathlib import Path
 
-def process_control(control, parent_params=[], sibling_params=[]):
-    props = {p['name']: p['value'] for p in control.get('props')}
 
-    # Skip withdrawn controls
-    if 'status' in props and props['status'] == 'withdrawn':
-        return
+INSERT = re.compile(r"\{\{\s*insert:\s*param,\s*([^\s}]+)\s*\}\}")
+HEADERS = [
+    "Row Sort ID", "Control ID", "Statement ID", "Control Statement", "Supplemental Guidance",
+    "Control Title", "Source References", "Additional Information",
+]
 
-    control_id = control['id'].upper()
-    control_sort_id = props['sort-id']
-    statement = next(part for part in control['parts'] if part['name'] == 'statement')
-    control_params = control.get('params', [])
-    all_params = parent_params + sibling_params + control_params
-    guidance = next(part for part in control['parts'] if part['name'] == 'guidance')
 
-    def process_statement_to_row(statement, params, first_row=False):
-        if 'smt.' in statement['id']:
-            statement_id = statement['id'].split('smt.', 1)[-1].upper()
-        else:
-            statement_id = ''
+def walk(container: dict):
+    yield container
+    for key in ("groups", "controls"):
+        for child in container.get(key, []):
+            yield from walk(child)
 
-        row_sort_id = f'{control_sort_id}-{statement_id}'
-        prose = statement.get('prose', '')
 
-        def replace_param(param_id):
-            param = next(p for p in params if p['id'] == param_id)
-            if 'values' in param:
-                return f'[CCCS Assignment: {param['values'][0]}]'
-            elif 'select' in param:
-                return f'[Selection: {', '.join(param['select']['choice'])}]'
-            elif 'props' in param:
-                for prop in param['props']:
-                    if prop['name'] == 'alt-label':
-                        return f'[Assignment: organization-defined {prop['value']}]'
+def walk_controls(container: dict):
+    for control in container.get("controls", []):
+        yield control
+        yield from walk_controls(control)
+    for group in container.get("groups", []):
+        yield from walk_controls(group)
 
-            return f'[Assignment: organization-defined {param['label']}]'
 
-        for n in range(2): # Repeat to handle nested params
-            for match in re.findall(r'{{ insert\: param\, (.*?) }}', prose):
-                prose = prose.replace(f'{{{{ insert: param, {match} }}}}', replace_param(match))
+def render_text(text: str, params: dict, ancestors: tuple = ()) -> str:
+    def replace(match: re.Match) -> str:
+        param_id = match[1]
+        if param_id in ancestors:
+            raise ValueError(f"Cyclic parameter reference: {' -> '.join(ancestors + (param_id,))}")
+        if param_id not in params:
+            raise ValueError(f"Unresolved parameter: {param_id}")
+        param = params[param_id]
+        nested = ancestors + (param_id,)
+        if "values" in param:
+            if not param["values"]:
+                raise ValueError(f"Parameter has no assigned values: {param_id}")
+            value = "; ".join(render_text(value, params, nested) for value in param["values"])
+            return f"[CCCS Assignment: {value}]"
+        if "select" in param:
+            choices = param["select"].get("choice", [])
+            if not choices:
+                raise ValueError(f"Selection has no choices: {param_id}")
+            cardinality = " (one or more)" if param["select"].get("how-many") == "one-or-more" else ""
+            value = "; ".join(render_text(choice, params, nested) for choice in choices)
+            return f"[Selection{cardinality}: {value}]"
+        label = next(
+            (p["value"] for p in param.get("props", []) if p["name"] == "alt-label"),
+            param.get("label"),
+        )
+        if not label:
+            raise ValueError(f"Parameter has no assignment label: {param_id}")
+        label = re.sub(r"^organization-defined\s+", "", label, flags=re.IGNORECASE)
+        return f"[Assignment: organization-defined {render_text(label, params, nested)}]"
 
-        # Add guidance to first row of control
-        row_guidance = guidance.get('prose', '') if first_row else ''
+    return INSERT.sub(replace, text)
 
-        csv_rows.append([row_sort_id, control_id, statement_id, prose, row_guidance])
 
-        # Recurse for nested statements
-        if 'parts' in statement:
-            for sub_statement in statement['parts']:
-                process_statement_to_row(sub_statement, params)
+def part_text(part: dict, params: dict) -> str:
+    texts = [render_text(part["prose"], params)] if part.get("prose") else []
+    texts.extend(part_text(child, params) for child in part.get("parts", []))
+    return "\n\n".join(text for text in texts if text)
 
-    process_statement_to_row(statement, all_params, first_row=True)
 
-    # Recurse for nested controls
-    if 'controls' in control:
-        nested_sibling_params = []
-        for sub_control in control['controls']:
-            nested_sibling_params.extend(sub_control.get('params', []))
-        
-        for sub_control in control['controls']:
-            process_control(sub_control, parent_params=all_params, sibling_params=nested_sibling_params)
+def natural_key(text: str) -> list:
+    return [int(token) if token.isdigit() else token for token in re.split(r"(\d+)", text)]
 
-# Main
+
+def catalog_to_rows(catalog: dict) -> list[list[str]]:
+    params = {}
+    for container in walk(catalog):
+        for param in container.get("params", []):
+            if param["id"] in params:
+                raise ValueError(f"Duplicate parameter ID: {param['id']}")
+            params[param["id"]] = param
+    rows = []
+    for control in walk_controls(catalog):
+        props = {p["name"]: p["value"] for p in control.get("props", [])}
+        if props.get("status") == "withdrawn":
+            continue
+        statements = [part for part in control["parts"] if part["name"] == "statement"]
+        if not statements:
+            raise ValueError(f"Active control has no statement: {control['id']}")
+        if "sort-id" not in props:
+            raise ValueError(f"Control has no sort-id: {control['id']}")
+        guidance = "\n\n".join(
+            part_text(part, params) for part in control["parts"] if part["name"] == "guidance"
+        )
+        additional = "\n\n".join(
+            (f"**{part['title']}**\n\n" if part.get("title") else "") + part_text(part, params)
+            for part in control["parts"] if part["name"] not in ("statement", "guidance")
+        )
+        references = "\n".join(
+            link["href"] for link in control.get("links", []) if link.get("rel") == "reference"
+        )
+        first_row = True
+
+        def append_statement(statement: dict) -> None:
+            nonlocal first_row
+            statement_id = statement.get("id", "").split("_smt.", 1)[-1].upper() if "_smt." in statement.get("id", "") else ""
+            rows.append([
+                f"{props['sort-id']}-{statement_id}", control["id"].upper(), statement_id,
+                render_text(statement.get("prose", ""), params),
+                guidance if first_row else "", control["title"], references if first_row else "",
+                additional if first_row else "",
+            ])
+            first_row = False
+            for child in statement.get("parts", []):
+                append_statement(child)
+
+        for statement in statements:
+            append_statement(statement)
+    rows.sort(key=lambda row: natural_key(row[0]))
+    return rows
+
+
+def convert(catalog_path: Path, output_path: Path) -> None:
+    catalog = json.loads(catalog_path.read_text(encoding="utf-8"))["catalog"]
+    rows = catalog_to_rows(catalog)
+    with output_path.open("w", encoding="utf-8", newline="") as output:
+        writer = csv.writer(output)
+        writer.writerow(HEADERS)
+        writer.writerows(rows)
+
+
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: python catalog-to-csv.py <catalog_file_path> <csv_output_path>")
-        sys.exit(1)
-
-    catalog_path = sys.argv[1]
-    csv_output_path = sys.argv[2]
-
-    # Read catalog
-    with open(catalog_path, 'r') as catalog_file:
-        catalog = json.load(catalog_file)['catalog']
-
-    # Collect CSV rows
-    csv_rows = []
-
-    # Process grouped controls
-    if 'groups' in catalog:
-        for group in catalog['groups']:
-
-            # Collect parameters
-            group_sibling_params = []
-            for control in group['controls']:
-                group_sibling_params.extend(control.get('params', []))
-            
-            # Process controls
-            for control in group['controls']:
-                process_control(control, sibling_params=group_sibling_params)
-
-    # Process ungrouped controls
-    if 'controls' in catalog:
-        for control in catalog['controls']:
-            process_control(control)
-
-    # Sort rows by sort-id
-    csv_rows.sort(key=lambda x: x[0])
-
-    # Write CSV file
-    with open(csv_output_path, 'w', newline='') as csv_file:
-        writer = csv.writer(csv_file)
-        writer.writerow(['Row Sort ID', 'Control ID', 'Statement ID', 'Control Statement', 'Supplemental Guidance'])
-        writer.writerows(csv_rows)
+    parser = argparse.ArgumentParser(description="Export OSCAL control statements and guidance to UTF-8 CSV.")
+    parser.add_argument("catalog", type=Path)
+    parser.add_argument("output", type=Path)
+    args = parser.parse_args()
+    convert(args.catalog, args.output)
