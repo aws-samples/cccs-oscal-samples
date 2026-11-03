@@ -1,13 +1,28 @@
 {
   "profile": {
-    "uuid": "20f12364-07f1-443e-8257-62e5e937ecd2",
+    "uuid": "42bdaf44-d189-5689-9fe8-12d5589a0435",
     "metadata": {
       "title": "CCCS ITSP.10.171 Profile",
-      "last-modified": "2025-04-28T23:16:00+00:00",
-      "version": "1.0.0",
-      "oscal-version": "1.1.2"
+      "last-modified": "2026-10-30T18:29:00Z",
+      "version": "2.0.0",
+      "oscal-version": "1.2.3",
+      "links": [
+        {
+          "href": "https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171",
+          "rel": "reference"
+        },
+        {
+          "href": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033",
+          "rel": "reference"
+        }
+      ],
+      "remarks": "October 28, 2025 second release. Includes the actual numbered ITSP.10.171 requirements, discussions and Annex B parameter inventory, as well as every Annex A source control marked C. The source-control crosswalk is supporting context, not a substitute for the numbered requirements or their tailoring. Organization-defined parameters require organization-specific decisions. Requirement text: Canadian Centre for Cyber Security, Protecting specified information in non-Government of Canada systems and organizations (ITSP.10.171), October 28, 2025; an unofficial reproduction of the publication at the reference URL.\n\nControl text: Canadian Centre for Cyber Security, Security and privacy controls and assurance activities catalogue (ITSP.10.033), March 31, 2026; an unofficial reproduction of the publication at the reference URL. Source text is Crown copyright, reproduced under the Government of Canada non-commercial reproduction terms, not the repository's MIT-0 software license. Commercial redistribution requires permission. This transcription is not endorsed by the Government of Canada."
     },
     "imports": [
+      {
+        "href": "../../imports/cccs-itsp.10.171-catalog/cccs-itsp.10.171-catalog.json",
+        "include-all": {}
+      },
       {
         "href": "../../imports/cccs-mods-profile/cccs-mods-profile.json",
         "include-controls": [
@@ -178,6 +193,4405 @@
     "merge": {
       "as-is": true
     },
-    "back-matter": {}
+    "modify": {
+      "alters": [
+        {
+          "control-id": "ac-1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Policy and procedures 03.15.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Account management 03.01.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-2.3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-2.3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Account management 03.01.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-2.5",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-2.5_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Account management 03.01.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-2.13",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-2.13_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Account management 03.01.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Access enforcement 03.01.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-4",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.03",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-4_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Information flow enforcement 03.01.03](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-03)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-5",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.04",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-5_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Separation of duties 03.01.04](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-04)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-6",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.05",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-6_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Least privilege 03.01.05](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-05)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-6.1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.05",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-6.1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Least privilege 03.01.05](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-05)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-6.2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.06",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-6.2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Least privilege - privileged accounts 03.01.06](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-06)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-6.5",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.06",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-6.5_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Least privilege - privileged accounts 03.01.06](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-06)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-6.7",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.05",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-6.7_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Least privilege 03.01.05](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-05)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-6.9",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.07",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-6.9_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Privileged accounts - privileged functions 03.01.07](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-07)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-6.10",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.07",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-6.10_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Privileged accounts - privileged functions 03.01.07](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-07)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-7",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.08",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-7_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Unsuccessful logon attempts 03.01.08](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-08)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-8",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.09",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-8_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[System use notification 03.01.09](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-09)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-11",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.10",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-11_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Device lock 03.01.10](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-10)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-11.1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.10",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-11.1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Device lock 03.01.10](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-10)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-12",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.11",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-12_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Session termination 03.01.11](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-11)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-17",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-17_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Access enforcement 03.01.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-17.2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.13.08",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-17.2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Transmission and storage confidentiality 03.13.08](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-13-08)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-17.3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.12",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-17.3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Remote access 03.01.12](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-12)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-17.4",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.12",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-17.4_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Remote access 03.01.12](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-12)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-18",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.16",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-18_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Wireless access 03.01.16](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-16)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-18.1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.16",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-18.1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Wireless access 03.01.16](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-16)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-18.3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.16",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-18.3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Wireless access 03.01.16](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-16)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-19",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.18",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-19_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Access control for mobile devices 03.01.18](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-18)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-19.5",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.18",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-19.5_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Access control for mobile devices 03.01.18](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-18)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-20",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.20",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-20_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Use of external systems 03.01.20](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-20)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-20.1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.20",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-20.1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Use of external systems 03.01.20](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-20)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-20.2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.20",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-20.2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Use of external systems 03.01.20](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-20)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-22",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.01.22",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ac-22_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Publicly accessible content 03.01.22](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-01-22)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "at-1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "at-1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Policy and procedures 03.15.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "at-2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.02.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "at-2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Literacy training and awareness 03.02.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-02-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "at-2.2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.02.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "at-2.2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Literacy training and awareness 03.02.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-02-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "at-2.3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.02.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "at-2.3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Literacy training and awareness 03.02.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-02-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "at-3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.02.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "at-3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Role-based training 03.02.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-02-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "au-1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "au-1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Policy and procedures 03.15.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "au-2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.03.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "au-2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Event logging 03.03.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-03-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "au-3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.03.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "au-3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Audit record content 03.03.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-03-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "au-3.1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.03.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "au-3.1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Audit record content 03.03.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-03-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "au-5",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.03.04",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "au-5_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Response to audit logging process failures 03.03.04](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-03-04)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "au-6",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.03.05",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "au-6_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Audit record review, analysis, and reporting 03.03.05](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-03-05)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "au-6.3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.03.05",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "au-6.3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Audit record review, analysis, and reporting 03.03.05](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-03-05)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "au-7",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.03.06",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "au-7_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Audit record reduction and report generation 03.03.06](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-03-06)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "au-8",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.03.07",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "au-8_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Time stamps 03.03.07](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-03-07)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "au-9",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.03.08",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "au-9_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Protection of audit information 03.03.08](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-03-08)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "au-9.4",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.03.08",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "au-9.4_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Protection of audit information 03.03.08](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-03-08)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "au-11",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.03.03",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "au-11_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Audit record generation 03.03.03](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-03-03)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "au-12",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.03.03",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "au-12_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Audit record generation 03.03.03](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-03-03)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ca-1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ca-1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Policy and procedures 03.15.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ca-2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.12.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ca-2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Security assessment 03.12.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-12-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ca-3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.12.05",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ca-3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Information exchange 03.12.05](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-12-05)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ca-5",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.12.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ca-5_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Plan of action and milestones 03.12.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-12-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ca-7",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.12.03",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ca-7_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Continuous monitoring 03.12.03](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-12-03)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "cm-1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Policy and procedures 03.15.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.04.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "cm-2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Baseline configuration 03.04.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-04-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-2.7",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.04.12",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "cm-2.7_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[System and component configuration for high-risk areas 03.04.12](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-04-12)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.04.03",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "cm-3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Configuration change control 03.04.03](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-04-03)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-4",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.04.04",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "cm-4_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Impact analyses 03.04.04](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-04-04)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-4.2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.04.04",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "cm-4.2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Impact analyses 03.04.04](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-04-04)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-5",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.04.05",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "cm-5_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Access restrictions for change 03.04.05](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-04-05)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-6",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.04.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "cm-6_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Configuration settings 03.04.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-04-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-7",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.04.06",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "cm-7_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Least functionality 03.04.06](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-04-06)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-7.1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.04.06",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "cm-7.1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Least functionality 03.04.06](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-04-06)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-7.5",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.04.08",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "cm-7.5_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Authorized software - allow by exception 03.04.08](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-04-08)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-8",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.04.10",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "cm-8_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[System component inventory 03.04.10](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-04-10)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-8.1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.04.10",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "cm-8.1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[System component inventory 03.04.10](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-04-10)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-12",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.04.11",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "cm-12_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Information location 03.04.11](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-04-11)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cp-9",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.08.09",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "cp-9_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[System backup - cryptographic protection 03.08.09](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-08-09)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cp-9.8",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.08.09",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "cp-9.8_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[System backup - cryptographic protection 03.08.09](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-08-09)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ia-1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Policy and procedures 03.15.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.05.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ia-2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[User identification, authentication, and re-authentication 03.05.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-05-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-2.1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.05.03",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ia-2.1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Multi-factor authentication 03.05.03](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-05-03)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-2.2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.05.03",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ia-2.2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Multi-factor authentication 03.05.03](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-05-03)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-2.8",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.05.04",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ia-2.8_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Replay-resistant authentication 03.05.04](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-05-04)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.05.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ia-3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Device identification and authentication 03.05.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-05-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-4",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.05.05",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ia-4_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Identifier management 03.05.05](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-05-05)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-4.4",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.05.05",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ia-4.4_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Identifier management 03.05.05](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-05-05)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-5",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.05.12",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ia-5_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Authenticator management 03.05.12](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-05-12)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-5.1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.05.07",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ia-5.1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Password management 03.05.07](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-05-07)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-6",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.05.11",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ia-6_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Authentication feedback 03.05.11](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-05-11)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-11",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.05.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ia-11_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[User identification, authentication, and re-authentication 03.05.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-05-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ir-1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ir-1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Policy and procedures 03.15.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ir-2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.06.04",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ir-2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Incident response training 03.06.04](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-06-04)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ir-3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.06.03",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ir-3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Incident response testing 03.06.03](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-06-03)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ir-4",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.06.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ir-4_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Incident handling 03.06.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-06-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ir-5",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.06.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ir-5_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Incident monitoring, reporting, and response assistance 03.06.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-06-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ir-6",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.06.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ir-6_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Incident monitoring, reporting, and response assistance 03.06.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-06-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ir-7",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.06.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ir-7_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Incident monitoring, reporting, and response assistance 03.06.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-06-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ir-8",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.06.05",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ir-8_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Incident response plan 03.06.05](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-06-05)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ma-1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ma-1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Policy and procedures 03.15.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ma-3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.07.04",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ma-3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Maintenance tools 03.07.04](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-07-04)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ma-3.1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.07.04",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ma-3.1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Maintenance tools 03.07.04](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-07-04)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ma-3.2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.07.04",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ma-3.2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Maintenance tools 03.07.04](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-07-04)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ma-3.3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.07.04",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ma-3.3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Maintenance tools 03.07.04](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-07-04)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ma-4",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.07.05",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ma-4_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Non-local maintenance 03.07.05](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-07-05)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ma-5",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.07.06",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ma-5_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Maintenance personnel 03.07.06](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-07-06)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "mp-1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "mp-1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Policy and procedures 03.15.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "mp-2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.08.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "mp-2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Media access 03.08.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-08-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "mp-3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.08.04",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "mp-3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Media marking 03.08.04](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-08-04)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "mp-4",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.08.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "mp-4_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Media storage 03.08.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-08-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "mp-5",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.08.05",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "mp-5_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Media transport 03.08.05](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-08-05)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "mp-6",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.08.03",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "mp-6_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Media sanitization 03.08.03](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-08-03)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "mp-7",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.08.07",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "mp-7_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Media use 03.08.07](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-08-07)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pe-1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "pe-1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Policy and procedures 03.15.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pe-2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.10.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "pe-2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Physical access authorizations 03.10.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-10-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pe-3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.10.07",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "pe-3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Physical access control 03.10.07](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-10-07)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pe-4",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.10.08",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "pe-4_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Access control for transmission 03.10.08](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-10-08)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pe-5",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.10.07",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "pe-5_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Physical access control 03.10.07](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-10-07)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pe-6",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.10.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "pe-6_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Monitoring physical access 03.10.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-10-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pe-17",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.10.06",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "pe-17_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Alternate work site 03.10.06](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-10-06)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pl-1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "pl-1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Policy and procedures 03.15.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pl-2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "pl-2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[System security plan 03.15.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pl-4",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.03",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "pl-4_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Rules of behaviour 03.15.03](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-03)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ps-1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ps-1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Policy and procedures 03.15.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ps-3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.09.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ps-3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Personnel screening 03.09.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-09-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ps-4",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.09.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ps-4_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Personnel termination and transfer 03.09.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-09-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ps-5",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.09.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ps-5_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Personnel termination and transfer 03.09.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-09-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ra-1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ra-1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Policy and procedures 03.15.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ra-3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.11.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ra-3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Risk assessment 03.11.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-11-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ra-3.1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.11.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ra-3.1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Risk assessment 03.11.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-11-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ra-5",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.11.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ra-5_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Vulnerability monitoring and scanning 03.11.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-11-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ra-5.2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.11.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ra-5.2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Vulnerability monitoring and scanning 03.11.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-11-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ra-7",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.11.04",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "ra-7_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Risk response 03.11.04](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-11-04)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sa-1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sa-1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Policy and procedures 03.15.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sa-8",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.16.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sa-8_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Security engineering principles 03.16.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-16-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sa-9",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.16.03",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sa-9_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[External system services 03.16.03](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-16-03)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sa-22",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.16.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sa-22_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Unsupported system components 03.16.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-16-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sc-1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Policy and procedures 03.15.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-4",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.13.04",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sc-4_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Information in shared system resources 03.13.04](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-13-04)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-7",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.13.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sc-7_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Boundary protection 03.13.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-13-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-7.5",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.13.06",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sc-7.5_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Network communications - deny by default - allow by exception 03.13.06](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-13-06)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-8",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.13.08",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sc-8_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Transmission and storage confidentiality 03.13.08](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-13-08)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-8.1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.13.08",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sc-8.1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Transmission and storage confidentiality 03.13.08](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-13-08)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-10",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.13.09",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sc-10_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Network disconnect 03.13.09](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-13-09)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-12",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.13.10",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sc-12_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Cryptographic key establishment and management 03.13.10](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-13-10)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-13",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.13.11",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sc-13_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Cryptographic protection 03.13.11](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-13-11)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-15",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.13.12",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sc-15_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Collaborative computing devices and applications 03.13.12](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-13-12)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-18",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.13.13",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sc-18_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Mobile code 03.13.13](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-13-13)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-23",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.13.15",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sc-23_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Session authenticity 03.13.15](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-13-15)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-28",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.13.08",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sc-28_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Transmission and storage confidentiality 03.13.08](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-13-08)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-28.1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.13.08",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sc-28.1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Transmission and storage confidentiality 03.13.08](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-13-08)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "si-1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Policy and procedures 03.15.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.14.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "si-2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Flaw remediation 03.14.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-14-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.14.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "si-3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Malicious code protection 03.14.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-14-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-4",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.14.06",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "si-4_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[System monitoring 03.14.06](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-14-06)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-4.4",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.14.06",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "si-4.4_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[System monitoring 03.14.06](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-14-06)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-5",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.14.03",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "si-5_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Security alerts, advisories, and directives 03.14.03](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-14-03)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-12",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.14.08",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "si-12_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Information management and retention 03.14.08](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-14-08)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-400",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.14.09",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "si-400_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Dedicated administration workstation 03.14.09](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-14-09)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sr-1",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.15.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sr-1_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Policy and procedures 03.15.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-15-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sr-2",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.17.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sr-2_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Supply chain risk management plan 03.17.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-17-01)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sr-3",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.17.03",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sr-3_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Supply chain requirements and processes 03.17.03](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-17-03)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sr-5",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.17.02",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sr-5_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Acquisition strategies, tools, and methods 03.17.02](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-17-02)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sr-6",
+          "adds": [
+            {
+              "props": [
+                {
+                  "name": "tailoring-criteria",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "value": "C"
+                }
+              ],
+              "links": [
+                {
+                  "href": "#itsp171-03.11.01",
+                  "rel": "related"
+                }
+              ],
+              "parts": [
+                {
+                  "id": "sr-6_itsp171-mapping",
+                  "name": "profile-guidance",
+                  "ns": "https://github.com/kylecancode/cccs-oscal-samples/ns",
+                  "prose": "**ITSP.10.171 Annex A security requirement mapping**\n\n[Risk assessment 03.11.01](https://www.cyber.gc.ca/en/guidance/protecting-specified-information-non-government-canada-systems-and-organizations-itsp10171#03-11-01)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   }
 }

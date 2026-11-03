@@ -1,11 +1,18 @@
 {
   "profile": {
-    "uuid": "b2195df4-6a73-42c4-97a6-8dda69325c63",
+    "uuid": "20a6be89-9bfb-5638-9d6e-533f64dfc3e2",
     "metadata": {
       "title": "CCCS SaaS FedRAMP Recognition Profile",
-      "last-modified": "2025-10-06T20:04:58+00:00",
-      "version": "1.0.0",
-      "oscal-version": "1.1.2"
+      "last-modified": "2026-10-30T18:29:00Z",
+      "version": "2.0.0",
+      "oscal-version": "1.2.3",
+      "remarks": "Legacy sample profile selections and parameter assignments are preserved. Control titles, statements and discussion now use the published March 31, 2026 CCCS ITSP.10.033 catalog. This is a versioned sample, not a certification that the cloud/FedRAMP/PBHVA allocations reflect a newly issued baseline. Review applicability and organization-defined values before operational use.\n\nControl text: Canadian Centre for Cyber Security, Security and privacy controls and assurance activities catalogue (ITSP.10.033), March 31, 2026; an unofficial reproduction of the publication at the reference URL. Source text is Crown copyright, reproduced under the Government of Canada non-commercial reproduction terms, not the repository's MIT-0 software license. Commercial redistribution requires permission. This transcription is not endorsed by the Government of Canada.",
+      "links": [
+        {
+          "href": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033",
+          "rel": "reference"
+        }
+      ]
     },
     "imports": [
       {
@@ -73,7 +80,6 @@
     ],
     "merge": {
       "as-is": true
-    },
-    "back-matter": {}
+    }
   }
 }

@@ -1,0 +1,62 @@
+{
+  "ac-2.2": {
+    "time period for each type of account": ["ac-02.02_odp.02"]
+  },
+  "ac-2.9": {
+    "conditions for establishing shared and group accounts": ["ac-02.09_odp"]
+  },
+  "ac-4.21": {
+    "required separations by types of information": ["ac-04.21_odp.03"]
+  },
+  "ac-6.7": {
+    "roles or classes of users": ["ac-06.07_odp.02"]
+  },
+  "ac-10": {
+    "account and/or account type": ["ac-10_odp.01"]
+  },
+  "ac-11": {
+    "tie period": ["ac-11_odp.02"]
+  },
+  "ac-12": {
+    "conditions or trigger events requiring session disconnect": ["ac-12_odp"]
+  },
+  "au-2": {
+    "event types that the system is capable of logging": ["au-02_odp.01"],
+    "event types (subset of the event types defined in AU-02A.) along with the frequency of (or situation requiring) logging for each identified event type": ["au-2_prm_2"]
+  },
+  "au-10": {
+    "actions to be covered by non-repudiation": ["au-10_odp"]
+  },
+  "au-11": {
+    "time period consistent with records retention policy": ["au-11_odp"]
+  },
+  "ca-2": {
+    "frequency": ["ca-02_odp.01"]
+  },
+  "cm-7.5": {
+    "software programs authorized to execute on the system": ["cm-07.05_odp.01"]
+  },
+  "cm-8": {
+    "information deemed necessary to achieve effective system component accountability": ["cm-08_odp.01"]
+  },
+  "cp-9": {
+    "frequency consistent with recovery time and recovery point objectives": ["cp-09_odp.02", "cp-09_odp.03", "cp-09_odp.04"]
+  },
+  "ia-4.4": {
+    "characteristic identifying individual status": ["ia-04.04_odp"]
+  },
+  "ir-8": {
+    "incident response personnel (identified by name and/or by role) and organizational elements": ["ir-08_odp.04", "ir-8_prm_5"]
+  },
+  "mp-3": {
+    "types of system media": ["mp-03_odp.01"]
+  },
+  "pe-3": {
+    "entry and exit points to the facility where the system resides": ["pe-03_odp.01"],
+    "circumstances requiring visitor escorts and control of visitor activity": ["pe-03_odp.06"],
+    "frequency": ["pe-03_odp.08", "pe-3_prm_9", "pe-3_prm_9"]
+  },
+  "pe-10": {
+    "location by system or system component": ["pe-10_odp.02"]
+  }
+}

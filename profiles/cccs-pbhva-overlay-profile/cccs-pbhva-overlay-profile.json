@@ -1,11 +1,18 @@
 {
   "profile": {
-    "uuid": "20f12364-07f1-443e-8257-62e5e937ecd2",
+    "uuid": "098b8dbd-298c-52c8-b6a9-bc2b60900ea3",
     "metadata": {
       "title": "CCCS PBHVA Overlay Profile",
-      "last-modified": "2024-09-12T23:16:00+00:00",
-      "version": "1.1.0",
-      "oscal-version": "1.1.2"
+      "last-modified": "2026-10-30T18:29:00Z",
+      "version": "2.0.0",
+      "oscal-version": "1.2.3",
+      "remarks": "Legacy sample profile selections and parameter assignments are preserved. Control titles, statements and discussion now use the published March 31, 2026 CCCS ITSP.10.033 catalog. This is a versioned sample, not a certification that the cloud/FedRAMP/PBHVA allocations reflect a newly issued baseline. Review applicability and organization-defined values before operational use.\n\nControl text: Canadian Centre for Cyber Security, Security and privacy controls and assurance activities catalogue (ITSP.10.033), March 31, 2026; an unofficial reproduction of the publication at the reference URL. Source text is Crown copyright, reproduced under the Government of Canada non-commercial reproduction terms, not the repository's MIT-0 software license. Commercial redistribution requires permission. This transcription is not endorsed by the Government of Canada.",
+      "links": [
+        {
+          "href": "https://www.cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/itsp10033",
+          "rel": "reference"
+        }
+      ]
     },
     "imports": [
       {
@@ -78,19 +85,27 @@
       "set-parameters": [
         {
           "param-id": "ac-02_odp.03",
-          "values": ["responsible managers"]
-        },        
+          "values": [
+            "responsible managers"
+          ]
+        },
         {
           "param-id": "ac-02_odp.06",
-          "values": ["twenty-four (24) hours"]
+          "values": [
+            "twenty-four (24) hours"
+          ]
         },
         {
           "param-id": "ac-02_odp.07",
-          "values": ["eight (8) hours"]
+          "values": [
+            "eight (8) hours"
+          ]
         },
         {
           "param-id": "ac-02_odp.08",
-          "values": ["eight (8) hours"]
+          "values": [
+            "eight (8) hours"
+          ]
         },
         {
           "param-id": "ac-02_odp.10",
@@ -106,7 +121,9 @@
         },
         {
           "param-id": "ac-02.13_odp.01",
-          "values": ["one (1) hour"]
+          "values": [
+            "one (1) hour"
+          ]
         },
         {
           "param-id": "ac-02.13_odp.02",
@@ -116,19 +133,27 @@
         },
         {
           "param-id": "ac-06.03_odp.01",
-          "values": ["all privileged commands"]
+          "values": [
+            "all privileged commands"
+          ]
         },
         {
           "param-id": "ac-06.07_odp.01",
-          "values": ["at a minimum, annually"]
+          "values": [
+            "at a minimum, annually"
+          ]
         },
         {
           "param-id": "ac-06.07_odp.02",
-          "values": ["all users with privileges"]
+          "values": [
+            "all users with privileges"
+          ]
         },
         {
           "param-id": "ac-06.08_odp",
-          "values": ["any software except software explicitly documented"]
+          "values": [
+            "any software except software explicitly documented"
+          ]
         },
         {
           "param-id": "ac-12_odp",
@@ -138,15 +163,21 @@
         },
         {
           "param-id": "ac-17.09_odp",
-          "values": ["a period no greater than 15 minutes"]
+          "values": [
+            "a period no greater than 15 minutes"
+          ]
         },
         {
           "param-id": "au-05.01_odp.01",
-          "values": ["ISSO or main system admin"]
+          "values": [
+            "ISSO or main system admin"
+          ]
         },
         {
           "param-id": "au-05.01_odp.03",
-          "values": ["75%, or one month before expected negative impact"]
+          "values": [
+            "75%, or one month before expected negative impact"
+          ]
         },
         {
           "param-id": "au-10_odp",
@@ -156,7 +187,9 @@
         },
         {
           "param-id": "au-12.01_odp.01",
-          "values": ["all network, data storage, and computing devices"]
+          "values": [
+            "all network, data storage, and computing devices"
+          ]
         },
         {
           "param-id": "au-12.03_odp.01",
@@ -166,11 +199,15 @@
         },
         {
           "param-id": "au-12.03_odp.02",
-          "values": ["all network, data storage, and computing devices"]
+          "values": [
+            "all network, data storage, and computing devices"
+          ]
         },
         {
           "param-id": "cm-03_odp.01",
-          "values": ["at least 90 days"]
+          "values": [
+            "at least 90 days"
+          ]
         },
         {
           "param-id": "cm-03_odp.03",
@@ -180,11 +217,15 @@
         },
         {
           "param-id": "cm-08.04_odp",
-          "values": ["position and role"]
+          "values": [
+            "position and role"
+          ]
         },
         {
           "param-id": "ps-04_odp.01",
-          "values": ["one (1) hour"]
+          "values": [
+            "one (1) hour"
+          ]
         },
         {
           "param-id": "ps-04_odp.02",
@@ -194,11 +235,15 @@
         },
         {
           "param-id": "ra-05.05_odp.01",
-          "values": ["all components that support authentication"]
+          "values": [
+            "all components that support authentication"
+          ]
         },
         {
           "param-id": "ra-05.05_odp.02",
-          "values": ["all scans"]
+          "values": [
+            "all scans"
+          ]
         },
         {
           "param-id": "sa-16_odp",
@@ -226,7 +271,9 @@
         },
         {
           "param-id": "sc-08_odp",
-          "values": ["confidentiality AND integrity"]
+          "values": [
+            "confidentiality AND integrity"
+          ]
         },
         {
           "param-id": "sc-08.01_odp",
@@ -236,7 +283,9 @@
         },
         {
           "param-id": "sc-12.03_odp",
-          "values": ["CSE approved key management and processes"]
+          "values": [
+            "CSE approved key management and processes"
+          ]
         },
         {
           "param-id": "sc-28.01_odp.02",
@@ -252,10 +301,11 @@
         },
         {
           "param-id": "si-07.02_odp",
-          "values": ["designated IT Security Team"]
+          "values": [
+            "designated IT Security Team"
+          ]
         }
       ]
-    },
-    "back-matter": {}
+    }
   }
 }

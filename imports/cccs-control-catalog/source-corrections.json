@@ -1,0 +1,8 @@
+[
+  {
+    "control-id": "ma-4.5",
+    "before": "by [Assignment: organization-defined personnel or roles",
+    "after": "by [Assignment: organization-defined personnel or roles]",
+    "reason": "The published HTML omits the closing square bracket on the first assignment. Restore only that delimiter; do not change the requirement."
+  }
+]
