@@ -2,7 +2,7 @@
 
 This repo contains unofficial implementations of security control profiles from the [Canadian Centre for Cyber Security](https://cyber.gc.ca/en) (CCCS), expressed using the [Open Security Controls Assessment Language](https://pages.nist.gov/OSCAL/) (OSCAL) 1.2.3.
 
-For an introduction to key OSCAL concepts, please see the [documentation](https://pages.nist.gov/OSCAL/resources/concepts/terminology/).
+For an introduction to key OSCAL concepts, please see the [documentation](https://pages.nist.gov/OSCAL/learn/concepts/terminology/).
 
 ## Authoritative sources and coverage
 
